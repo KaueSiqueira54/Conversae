@@ -8,10 +8,10 @@ main{
     width: 100%;
     background-color: rgb(59, 17, 99);
 }
-#header1{
+#nav{
     position: relative;
     width: 90%;
-    height: 124px;    
+    height: 125px;    
     justify-content: center;
 }
 #logo{
@@ -22,14 +22,16 @@ main{
     margin-left: 45px;
     float: left;
 }
-#texto{
-    align-items: flex-end;
-    float: left;
-    flex-direction: column;
-}
-header h1{
+#texto-logo{
     position: relative;
-    font-family: "Fraunces", serif;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fraunces";
+}
+nav h1{
+    position: relative;
     font-size: 32px;
     margin-top: 50px;
     margin-left: 5px;
@@ -37,27 +39,30 @@ header h1{
     float: left;
 }
 #h2{
+    margin-top: -40px;
+    margin-left: 25%;
+    float: left;
     color: #FFE778;
     font-style: italic;
 }
-header p{
+nav p{
+    font-size: 15px;
     color: white;
-
 }
 #boneco{
     position: relative;
-    width: 60px;
-    height: 40px;
+    width: auto;
+    height: auto;
     align-content: end;
-    margin-top: -43px;
     margin-left: 100%;
+    margin-top: -70px;
     float: left;
 }
-#header2{
+#header{
     position: relative;
+    margin-top: 60px;
     width: 100%;
-    font-family: "Fraunces", serif;
-    margin-top: -200px;
+    font-family: "Fraunces";    
     font-weight: bold;
     font-size: 64px;
     color: white;
@@ -66,58 +71,62 @@ header p{
     justify-content: center;
 
 }
-
-section img{
-    position: relative;
-    width: 75%;
-    height: 435px;
-    float: left;
+header h1{
+    font-weight: bold;
+    font-size: 64px;
 }
-section p{
-    position: relative;
-    width: 50%;
-    margin-top: 10px;
-    margin-left: 10%;
-    font-size: 32px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: white;
-    text-align: center;
-    clear: left;
+section{
+    height:900px;
+    margin-top: 20px;
 }
 #seçao{
     position: relative;
-    width: 80%;
-    height: 593px;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin: auto;
-    margin-top: 70px;
 }
-#section2{
+#caixa1 img{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+#caixa1 p{
     position: relative;
     width: 50%;
+    margin-top: 10px;
+    margin-left: 15%;
+    font-size: 32px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#caixa2{
+    position: relative;
+    margin-top: 25px;
+    width: 55%;
     height: 593px;
     background-color: #D5C5E6;
     border-radius: 3%;
-    float: left;
     display: flex;
-    align-items:start;
     flex-direction: column;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 #componentes{
     width: 100%;
     height: 323px;
+    margin-top: 50px;
     }
 #p1, #p2, #p3, #p4, #p5{
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: black;
     text-align: justify;
-    font-weight: bold;
-    width: 90%;
+    margin-left: 8%;
+    font-weight: bold;    
 }
 #crp, #cpf, #nome, #email, #senha{
     position: relative;
@@ -138,10 +147,6 @@ section p{
     font-family: "Plus Jakarta Sans", sans-serif;
     
 }
-#section2 div p{
-    width: 100%;
-    text-align: justify;
-}
 #cadastrar{
     position: relative;
     font-size: 20px;
@@ -152,7 +157,7 @@ section p{
     background-color: #FFE778;
     text-align: center;
     margin: auto;
-    margin-top: 175px;
+    margin-top: 100px;
     border-radius: 2%;
 }
 #footer1{
@@ -173,13 +178,25 @@ section p{
     width: 9,5%;
     height: 44px;
 }
+footer{
+    position: relative;
+    width: 90%;
+    height: 300px;    
+    justify-content: center;
+    margin-top: 100px;
+    margin: auto;
+    background-color:rgb(59, 17, 99);
+}
+#footer1{
+    margin-left: 0;
+}
 #footer2{
     margin-top: -150px;
     position: relative;
     align-items: start;
     display: flex;
     flex-direction: column;
-    margin-left: 34%;
+    margin-left: 35%;
     font-family: "Fraunces", serif;
     font-size: 20px;
     color: white;
@@ -198,7 +215,7 @@ section p{
     align-items: start;
     display: flex;
     flex-direction: column;
-    margin-left: 48%;
+    margin-left: 57%;
     font-family: "Fraunces", serif;
     font-size: 20px;
     color: white;
@@ -212,19 +229,32 @@ section p{
 }
 #footer4
 {
-    margin-top: -165px;
     position: relative;
+    margin-top: -165px;
     align-items: start;
     display: flex;
     flex-direction: column;
-    margin-left: 64%;
+    margin-left: 80%;
     font-family: "Fraunces", serif;
     font-size: 20px;
     color: white;
     font-weight: lighter;
 }
 #links{
-font-family: "Fraunces", serif;
+    font-family: "Fraunces", serif;
     font-size: 28px;
     color: white;
     font-weight: bolder;}
+
+#direitos{
+    position: relative;
+    color: white;
+    display: flex;
+    align-content: center;
+    font-family: "Fraunces";
+    font-size: 24px;
+    font-weight: normal;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 30%;
+}
