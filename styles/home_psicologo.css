@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis de cor */
+
+:root {
+  --branco: #ffff;
+  --roxo-escuro: #591799;
+  --roxo-claro: #c77dff;
+  --roxo-dark: #37006c;
+  --amarelo: #ffe778;
+}
+
+/* Navbar */
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+.logo_nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+
+/* Estilização dos nomes da Logo */
+
+.nav_title_logo {
+  padding: 0.5rem;
+  font-family: Fraunces;
+  position: relative;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+#logo_2 {
+  display: flex;
+  float: left;
+  color: var(--roxo-escuro);
+}
+
+#h2_logo {
+  color: var(--roxo-claro);
+}
+
+#p_logo {
+  font-size: 15px;
+  color: var(--roxo-escuro);
+}
+
+/*Links da Navbar */
+
+.navbar_links {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 5px solid pink; */
+}
+
+.navbar_links a {
+  font-family: Fraunces;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar_links h4 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* Botões navbar */
+
+.buttons_navbar {
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons_navbar button {
+  font-family: Fraunces;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+  font-weight: 700;
+  background-color: var(--roxo-dark);
+  color: var(--branco);
+  border-radius: 47px;
+}
+
+/* hover dos botões da nav */
+
+#login:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border: 3px solid var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
+
+#cadastro:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
