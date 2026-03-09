@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+main{
+    position: relative;
+    width: 100%;
+    background-color: rgb(59, 17, 99);
+}
+#header1{
+    position: relative;
+    width: 90%;
+    height: 124px;    
+    justify-content: center;
+}
+#logo{
+    position: relative;
+    width: 9%;
+    height: 94px;
+    margin-top: 30px;
+    margin-left: 45px;
+    float: left;
+}
+#texto{
+    align-items: flex-end;
+    float: left;
+    flex-direction: column;
+}
+header h1{
+    position: relative;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-left: 5px;
+    color: white;
+    float: left;
+}
+#h2{
+    color: #FFE778;
+    font-style: italic;
+}
+header p{
+    color: white;
+
+}
+#boneco{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    align-content: end;
+    margin-top: -43px;
+    margin-left: 100%;
+    float: left;
+}
+#header2{
+    position: relative;
+    width: 100%;
+    font-family: "Fraunces", serif;
+    margin-top: -200px;
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section img{
+    position: relative;
+    width: 75%;
+    height: 435px;
+    float: left;
+}
+section p{
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-size: 32px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+    text-align: center;
+    clear: left;
+}
+#seçao{
+    position: relative;
+    width: 80%;
+    height: 593px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 70px;
+}
+#section2{
+    position: relative;
+    width: 50%;
+    height: 593px;
+    background-color: #D5C5E6;
+    border-radius: 3%;
+    float: left;
+    display: flex;
+    align-items:start;
+    flex-direction: column;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+#componentes{
+    width: 100%;
+    height: 323px;
+    }
+#p1, #p2, #p3, #p4, #p5{
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+    text-align: justify;
+    font-weight: bold;
+    width: 90%;
+}
+#crp, #cpf, #nome, #email, #senha{
+    position: relative;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 90%;
+    height: 46px;
+    background-color: white;
+    margin: auto;
+    border-radius: 2%;
+  
+    
+}
+#crp p, #cpf p, #nome p, #email p, #senha p{
+    font-weight: normal;
+    color: #808080;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    
+}
+#section2 div p{
+    width: 100%;
+    text-align: justify;
+}
+#cadastrar{
+    position: relative;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 70%;
+    height: 39px;
+    color: #37006C;
+    background-color: #FFE778;
+    text-align: center;
+    margin: auto;
+    margin-top: 175px;
+    border-radius: 2%;
+}
+#footer1{
+    margin-top: 50px;
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+#logo2{
+    position: relative;
+    width: 28%;
+    height: 104px;
+}
+#contato{
+    position: relative;
+    width: 9,5%;
+    height: 44px;
+}
+#footer2{
+    margin-top: -150px;
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 34%;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+
+}
+#navegaçao{
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    color: white;
+    font-weight: bolder;
+}
+#footer3{
+    margin-top: -128px;
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 48%;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+#contato{
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    color: white;
+    font-weight: bolder;
+}
+#footer4
+{
+    margin-top: -165px;
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 64%;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+#links{
+font-family: "Fraunces", serif;
+    font-size: 28px;
+    color: white;
+    font-weight: bolder;}
