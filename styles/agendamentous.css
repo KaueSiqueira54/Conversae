@@ -1,5 +1,6 @@
 
 *{
+  position: relative;
     border: 0;
     margin: 0;
     padding: 0;
@@ -74,7 +75,7 @@ main{
 
 .navbar_links {
   position: relative;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,6 +88,7 @@ main{
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
+  color: #591799;
 }
 
 .navbar_links h4 {
@@ -97,19 +99,14 @@ main{
 
 /* Botões navbar */
 
-.buttons_navbar {
-     position: relative;
-  position: relative;
-  width: 45%;
+.navbar_links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
-.buttons_navbar button {
+.navbar_links button {
      position: relative;
   font-family: Fraunces;
   font-size: 20px;
@@ -165,13 +162,30 @@ main{
     color: black;
     font-size: 26px;
     font-family: Plus Jakarta Sans;
+    margin-top: 1%;
 }
- #fundo_ps input{
-    width: 45%;
-    height: 50px;
+ #caixa_pesquisa input{
+    width: 100%;
+    height: 100%;
     text-align: left;
     font-size: 20px;
     font-family: Plus Jakarta Sans;
+    
+display: flex;
+ border-radius: 0px 5px 5px 0px;
 }
 
+#caixa_pesquisa{
+  position: relative;
+  width: 60%;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2%;
+ 
+}
+#imagem_pesquisa{
+  background-color: var(--branco);
+   border-radius: 5px 0px 0px 5px;
+}
 
