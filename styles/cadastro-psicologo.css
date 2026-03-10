@@ -179,6 +179,7 @@ section{
     height: 44px;
 }
 footer{
+    font-family: "Plus Jakarta Sans";
     position: relative;
     width: 90%;
     height: 300px;    
@@ -197,32 +198,28 @@ footer{
     display: flex;
     flex-direction: column;
     margin-left: 35%;
-    font-family: "Fraunces", serif;
     font-size: 20px;
     color: white;
     font-weight: lighter;
 
 }
 #navegaçao{
-    font-family: "Fraunces", serif;
     font-size: 28px;
     color: white;
     font-weight: bolder;
 }
 #footer3{
-    margin-top: -128px;
+    margin-top: -138px;
     position: relative;
     align-items: start;
     display: flex;
     flex-direction: column;
     margin-left: 57%;
-    font-family: "Fraunces", serif;
     font-size: 20px;
     color: white;
     font-weight: lighter;
 }
 #contato{
-    font-family: "Fraunces", serif;
     font-size: 28px;
     color: white;
     font-weight: bolder;
@@ -230,31 +227,30 @@ footer{
 #footer4
 {
     position: relative;
-    margin-top: -165px;
+    margin-top: -170px;
     align-items: start;
     display: flex;
     flex-direction: column;
     margin-left: 80%;
-    font-family: "Fraunces", serif;
     font-size: 20px;
     color: white;
     font-weight: lighter;
 }
 #links{
-    font-family: "Fraunces", serif;
     font-size: 28px;
     color: white;
     font-weight: bolder;}
 
 #direitos{
+    width: 51%;
     position: relative;
     color: white;
     display: flex;
     align-content: center;
-    font-family: "Fraunces";
+    font-family: "Plus Jakarta Sans";
     font-size: 24px;
     font-weight: normal;
     margin: auto;
-    margin-top: 100px;
-    margin-left: 30%;
+    margin-top: 50px;
+    text-align: center;
 }
