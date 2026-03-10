@@ -12,8 +12,10 @@
   --branco: #ffff;
   --roxo-escuro: #591799;
   --roxo-claro: #c77dff;
+  --roxo-claro-dois: #6a32a5;
   --roxo-dark: #37006c;
   --amarelo: #ffe778;
+  --amarelo-hover: #d9c45f;
 }
 
 /* Navbar */
@@ -21,12 +23,11 @@
 .navbar {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 130px;
   background-color: var(--branco);
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* border: 2px solid green; */
 }
 
 .logo_nav {
@@ -35,7 +36,6 @@
   flex-direction: row;
   margin: 0 auto;
   width: 90%;
-  /* border: 1px solid red; */
 }
 
 /* Estilização dos nomes da Logo */
@@ -75,7 +75,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* border: 5px solid pink; */
 }
 
 .navbar_links a {
@@ -129,3 +128,465 @@
   color: var(--roxo-dark);
   transition: 0.1s ease-in-out;
 }
+
+/* Section 01 */
+
+.section_one {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Imagens de fundo da section1 */
+
+#vector_fund2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#vector_fund1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Section dos conteúdos da section1 */
+
+.container_section_one {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid red; */
+  z-index: 1;
+}
+
+/* Container dos conteúdos */
+
+.container_um {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+/* Container titles */
+
+.container_titles {
+  width: 50%;
+}
+
+.container_um h1 {
+  font-family: Fraunces;
+  color: var(--roxo-dark);
+  font-size: 40px;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.container_um p {
+  width: 95%;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+#text2 {
+  color: var(--amarelo);
+  font-weight: 500;
+}
+
+/* Botão inscreva-se */
+
+.btn {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.btn #inscrever {
+  width: 100%;
+  height: 40px;
+  border-radius: 47px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--roxo-dark);
+  background-color: var(--amarelo);
+}
+
+.btn #inscrever:hover {
+  background-color: var(--amarelo-hover);
+  border: 3px solid var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
+
+/* Container imagem Section_um */
+
+.container_imagem {
+  position: relative;
+  width: 50%;
+  height: 400px;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+}
+
+/* Imagem da section_um */
+
+#imagem_section_um {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+/* SECTION DOIS */
+
+.section_dois {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+#title_section_dois {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#title_section_dois h1 {
+  font-family: Fraunces;
+  font-size: 40px;
+  color: var(--roxo-claro-dois);
+}
+
+/* Imagem section dois */
+
+.image_section_dois {
+  padding: 1rem;
+  position: relative;
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+.image_section_dois img {
+  width: 100%;
+  height: auto;
+}
+
+/* Caminhos abaixo da imagem da section dois */
+
+.conteudo_section_dois {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  height: 1200px;
+}
+
+#imagem-fundo-section-dois {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 40%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* Conteúdo um - casa */
+
+.imagem_conteudo_um {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 4%;
+  left: 63%;
+}
+
+.imagem_conteudo_um img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo_um_s_dois {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  width: 350px;
+  height: 100px;
+  border: 2px solid var(--roxo-dark);
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.container_text_conteudo_um {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  top: 45%;
+}
+
+.container_text_conteudo_um p {
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+  font-weight: 600;
+}
+
+/* Conteúdo dois - agenda */
+
+.imagem_conteudo_dois {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 19%;
+  left: 23%;
+}
+
+.imagem_conteudo_dois img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo_dois_s_dois {
+  position: absolute;
+  top: 22%;
+  left: 10%;
+  width: 350px;
+  height: 100px;
+  border: 2px solid var(--roxo-dark);
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.container_text_conteudo_dois {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  top: 45%;
+}
+
+.container_text_conteudo_dois p {
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+  font-weight: 600;
+}
+
+/* Conteúdo três - diploma */
+
+.imagem_conteudo_tres {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 37%;
+  left: 63%;
+}
+
+.imagem_conteudo_tres img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo_tres_s_dois {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 350px;
+  height: 100px;
+  border: 2px solid var(--roxo-dark);
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.container_text_conteudo_tres {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  top: 45%;
+}
+
+.container_text_conteudo_tres p {
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+  font-weight: 600;
+}
+
+/* Conteúdo quatro - people */
+
+.imagem_conteudo_quatro {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 49%;
+  left: 23%;
+}
+
+.imagem_conteudo_quatro img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo_quatro_s_dois {
+  position: absolute;
+  top: 52%;
+  left: 10%;
+  width: 350px;
+  height: 100px;
+  border: 2px solid var(--roxo-dark);
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.container_text_conteudo_quatro {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  top: 45%;
+}
+
+.container_text_conteudo_quatro p {
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+  font-weight: 600;
+}
+
+/* Conteúdo cinco - money */
+
+.imagem_conteudo_cinco {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 67%;
+  left: 63%;
+}
+
+.imagem_conteudo_cinco img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo_cinco_s_dois {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 350px;
+  height: 100px;
+  border: 2px solid var(--roxo-dark);
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.container_text_conteudo_cinco {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  top: 45%;
+}
+
+.container_text_conteudo_cinco p {
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+  font-weight: 600;
+}
+
+/* Conteúdo seis - inclusão */
+
+.imagem_conteudo_seis {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 81%;
+  left: 23%;
+}
+
+.imagem_conteudo_seis img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo_seis_s_dois {
+  position: absolute;
+  top: 84%;
+  left: 10%;
+  width: 350px;
+  height: 100px;
+  border: 2px solid var(--roxo-dark);
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.container_text_conteudo_seis {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  top: 45%;
+}
+
+.container_text_conteudo_seis p {
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+  font-weight: 600;
+}
+
+/* Botão cadastro */
+
+.btn_cad {
+  margin: 2rem;
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.btn_cad button {
+  width: 100%;
+  text-align: center;
+  background-color: var(--amarelo);
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--roxo-dark);
+  border-radius: 47px;
+}
+
+.btn_cad button:hover {
+  background-color: var(--amarelo-hover);
+  border: 3px solid var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
+
+/* SECTION TRES */
+
+/* 
+.section_tres {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #000;
+  border: 2px solid red;
+} */
