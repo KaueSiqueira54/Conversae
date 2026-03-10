@@ -1,9 +1,10 @@
-/* Reset CSS */
+h/* Reset CSS */
 * {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Variáveis de cor */
@@ -45,6 +46,7 @@
   font-family: Fraunces;
   position: relative;
   width: 35%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -58,10 +60,12 @@
 }
 
 #h2_logo {
+  margin: 0;
   color: var(--roxo-claro);
 }
 
 #p_logo {
+  margin: 0;
   font-size: 15px;
   color: var(--roxo-escuro);
 }
@@ -70,11 +74,18 @@
 
 .navbar_links {
   position: relative;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.navbar_links h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
 
 .navbar_links a {
@@ -84,26 +95,7 @@
   text-decoration: none;
 }
 
-.navbar_links h4 {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
-/* Botões navbar */
-
-.buttons_navbar {
-  position: relative;
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.buttons_navbar button {
+.navbar_links button {
   font-family: Fraunces;
   font-size: 20px;
   width: 200px;
@@ -243,14 +235,18 @@
   align-items: center;
   justify-items: center;
   display: flex;
+  margin: 0 auto;
 }
 
 /* Imagem da section_um */
 
-#imagem_section_um {
-  margin: 0 auto;
+.container_imagem img {
+  position: relative;
   width: 50%;
-  height: auto;
+  margin: 0 auto;
+}
+
+#imagem_section_um {
 }
 
 /* SECTION DOIS */
