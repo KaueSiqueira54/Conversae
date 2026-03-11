@@ -8,56 +8,133 @@ main{
     width: 100%;
     background-color: rgb(59, 17, 99);
 }
-#nav{
-    position: relative;
-    width: 90%;
-    height: 125px;    
-    justify-content: center;
+
+/* Variáveis de cor */
+ 
+:root {
+ --branco: #ffff;
+ --roxo-escuro: #591799;
+ --roxo-claro: #c77dff;
+ --roxo-dark: #37006c;
+ --amarelo: #ffe778;
 }
-#logo{
-    position: relative;
-    width: 9%;
-    height: 94px;
-    margin-top: 30px;
-    margin-left: 45px;
-    float: left;
+ 
+/* Navbar */
+ 
+.navbar {
+ position: relative;
+ width: 34%;
+ height: 150px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ /* border: 2px solid green; */
 }
-#texto-logo{
-    position: relative;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "Fraunces";
+ 
+.logo_nav {
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ margin: 0 auto;
+ width: 95%;
+ align-content: left;
+ margin-left: 10%;
+ /* border: 1px solid red; */
 }
-nav h1{
-    position: relative;
-    font-size: 32px;
-    margin-top: 50px;
-    margin-left: 5px;
-    color: white;
-    float: left;
+ 
+/* Estilização dos nomes da Logo */
+ 
+.nav_title_logo {
+ padding: 0.5rem;
+ font-family: Fraunces;
+ position: relative;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ justify-content:baseline;
+ margin-left: -30%;
 }
-#h2{
-    margin-top: -40px;
-    margin-left: 25%;
-    float: left;
-    color: #FFE778;
-    font-style: italic;
+ 
+#logo_2 {
+ display: flex;
+ float: left;
+ color: var(--branco);
 }
-nav p{
-    font-size: 15px;
-    color: white;
+ 
+#h2_logo {
+ color: var(--amarelo);
 }
-#boneco{
-    position: relative;
-    width: auto;
-    height: auto;
-    align-content: end;
-    margin-left: 100%;
-    margin-top: -70px;
-    float: left;
+ 
+#p_logo {
+ font-size: 15px;
+ color: var(--branco);
 }
+ 
+/*Links da Navbar */
+ 
+.navbar_links {
+ position: relative;
+ width: 50%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ /* border: 5px solid pink; */
+}
+ 
+.navbar_links a {
+ font-family: Fraunces;
+ font-size: 20px;
+ font-weight: 600;
+ text-decoration: none;
+}
+ 
+.navbar_links h4 {
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+}
+ 
+/* Botões navbar */
+ 
+.buttons_navbar {
+ position: relative;
+ width: 30%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-items: center;
+ justify-content: center;
+ gap: 10px;
+}
+ 
+.buttons_navbar button {
+ font-family: Fraunces;
+ font-size: 20px;
+ width: 200px;
+ height: 30px;
+ font-weight: 700;
+ background-color: var(--roxo-dark);
+ color: var(--branco);
+ border-radius: 47px;
+}
+ 
+/* hover dos botões da nav */
+ 
+#login:hover {
+ background-color: var(--amarelo);
+ color: var(--roxo-dark);
+ border: 3px solid var(--roxo-dark);
+ transition: 0.1s ease-in-out;
+}
+ 
+#cadastro:hover {
+ background-color: var(--amarelo);
+ color: var(--roxo-dark);
+ transition: 0.1s ease-in-out;
+}
+ 
 #header{
     position: relative;
     margin-top: 60px;
@@ -108,57 +185,52 @@ section{
     position: relative;
     margin-top: 25px;
     width: 55%;
-    height: 593px;
+    height: 650px;
     background-color: #D5C5E6;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
-#componentes{
+form{
     width: 100%;
     height: 323px;
     margin-top: 50px;
     }
-#p1, #p2, #p3, #p4, #p5{
+label{
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: black;
-    text-align: justify;
-    margin-left: 8%;
-    font-weight: bold;    
+    margin-left: 80px;
+    font-weight: bold;
 }
-#crp, #cpf, #nome, #email, #senha{
+input{
     position: relative;
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 90%;
+    width: 80%;
     height: 46px;
     background-color: white;
     margin: auto;
     border-radius: 2%;
-  
-    
+    margin-left: 10%;  
+    text-indent: 20px;
+
 }
-#crp p, #cpf p, #nome p, #email p, #senha p{
-    font-weight: normal;
-    color: #808080;
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    
-}
-#cadastrar{
+button{
     position: relative;
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
-    width: 70%;
+    width: 50%;
     height: 39px;
     color: #37006C;
     background-color: #FFE778;
-    text-align: center;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 2%;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 25%;
+    border-radius: 46px;
+    justify-content: center;
+
 }
 #footer1{
     margin-top: 50px;
@@ -188,11 +260,72 @@ footer{
     margin: auto;
     background-color:rgb(59, 17, 99);
 }
-#footer1{
-    margin-left: 0;
+f{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    align-content: left;
+    margin-left: 5%;
 }
+#footer1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 10%;
+    height: auto;
+    align-content: left;
+    margin-left: 5%;
+}
+#logo2{
+    width: auto;
+    height: auto;
+}
+#contato{
+    width: 100px;
+    margin-left: 10px;
+}
+.logo_f {
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ width: 95%;
+ align-content: left;
+ margin-left: 10%;
+ margin-top: -100px;
+ /* border: 1px solid red; */
+}
+ 
+/* Estilização dos nomes da Logo */
+ 
+.f_title_logo {
+    margin-top: -110px;
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    font-family: "Fraunces";
+}
+ 
+#logo_f {
+ display: flex;
+ float: left;
+ color: var(--branco);
+}
+ 
+#f_logo {
+ color: var(--amarelo);
+}
+ 
+#p_f {
+ font-size: 15px;
+ color: var(--branco);
+}
+
 #footer2{
-    margin-top: -150px;
+    margin-top: -72px;
     position: relative;
     align-items: start;
     display: flex;

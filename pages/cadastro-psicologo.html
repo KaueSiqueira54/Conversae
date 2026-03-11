@@ -14,16 +14,18 @@
 </head>
 <body>
     <main>
-        <nav id="nav">
-            
-            <img src="../images/cadastro-psicologo/image 2.png" id="logo">
-
-            <div id="texto-logo">
-            <h1 id="h1">Conver</h1><h1 id="h2">saê</h1>
-            <p>Mente em dia, vida em equilíbrio</p>
+        <nav class="navbar">
+         <div class="logo_nav">
+        <img src="../images/cadastro-psicologo/image 2.png" id="logo">
+         </div>   
+            <div class="nav_title_logo">
+            <h2 id="h2_logo">
+                aê 
+                <div id="logo_2">Convers</div>
+            </h2>
+            <p id="p_logo">Mente em dia, vida em equilíbrio</p>
             </div>
             
-            <img src="../images/cadastro-psicologo/Web Accessibility.png" id="boneco">
         </nav>
 
         <header id="header"><h1>Cadastro do psicólogo</h1>
@@ -38,7 +40,25 @@
         </div>
 
         <div id="caixa2">
-            <div id="componentes">
+            <form action="form">      
+                      <label> N° do CRP:</label>                  
+                      <input type="text" name="crp" maxlength="30" size="50" placeholder="Ex: 10/5926">                  
+                      <br> <br>          
+                     <label> N° do CPF:</label>                  
+                      <input type="text" name="cpf" maxlength="30" size="50" placeholder="Ex: 123.456.789-10">                  
+                      <br> <br>  
+                      <label> Nome completo:</label>                  
+                      <input type="text" name="nome" maxlength="30" size="50" placeholder="Digite seu nome aqui">                  
+                      <br> <br>          
+                      <label> Entre com o seu e-mail:</label>                  
+                      <input type="email" name="email" maxlength="30" size="30" placeholder="Digite seu email  aqui">
+                                      <br> <br>
+                        <label> Senha:</label>                  
+                      <input type="text" name="senha" maxlength="30" size="30" placeholder="****">
+                                      <br> <br>
+                    <button>Cadastrar</button>
+                    </form>
+            <!--<div id="componentes">
                 <p id="p1">N° do CRP*</p>
                 <div id="crp">
                     <p>Ex: 10/5926</p>
@@ -61,14 +81,24 @@
                 </div>
 
             </div>
-            <div id="cadastrar">Cadastrar</div>  
+            <div id="cadastrar">Cadastrar</div>-->  
         </div>
     </section>
     <footer>
+        
                 <div id="footer1">
-                <img src="../images/cadastro-psicologo/Logo.png" id="logo2">
+                <img src="../images/cadastro-psicologo/image 2.png" id="logo2">
                <img src="../images/cadastro-psicologo/Group 100.png" id="contato">
                </div>
+               <div class="f_title_logo">
+                <h2 id="f_logo">
+                aê 
+                <div id="logo_f">Convers</div>
+                </h2>
+                 <p id="p_f">Mente em dia, vida em equilíbrio</p>
+                  </div>
+
+
                <div id="footer2">
                 <h1 id="navegaçao">Navegação</h1>
                 <p>Início</p>
@@ -96,5 +126,16 @@
     </footer>
        
 </main>
+<!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
 </body>
 </html>
