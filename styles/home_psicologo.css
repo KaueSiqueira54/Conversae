@@ -401,8 +401,6 @@ main {
 .section_tres {
   position: relative;
   width: 100%;
-  height: 500px;
-  border: 2px solid red;
 }
 
 /* div mensalidade */
@@ -474,4 +472,96 @@ main {
 #mensalidade_button:hover {
   background-color: var(--amarelo-hover);
   border: 3px solid var(--roxo-dark);
+}
+
+/* Como funciona? Section tres */
+
+.title_section_tres {
+  margin: 8% auto;
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.title_section_tres h1 {
+  font-family: Fraunces;
+  font-size: 40px;
+  color: var(--roxo-claro-dois);
+}
+
+.como_funciona {
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  border: 3px solid var(--roxo-dark);
+  border-radius: 30px;
+  font-family: Plus Jakarta Sans;
+}
+
+/* Container */
+
+.container_como_funciona {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+}
+
+/* Conteúdo */
+
+.como_funciona_conteudo_um {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+}
+
+#conteudo_tres {
+  height: 160px;
+}
+
+#como_funciona_p {
+  display: flex;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container_passo_um {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#passo_um_img_1 {
+  width: 60px;
+  height: 60px;
+}
+
+#passo_um_p {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#passo_um_arrow {
+  position: absolute;
+  top: 140%;
+}
+
+/* SECTION QUATRO */
+
+.section_quatro {
+  width: 100%;
+  height: 200px;
 }
