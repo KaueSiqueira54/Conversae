@@ -563,5 +563,251 @@ main {
 
 .section_quatro {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* Container avaliação */
+
+.container_avaliacao {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* espaço entre os cards */
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+/* Avaliação */
+
+.avaliacao_um {
+  width: 48%;
+  height: 280px;
+  border: 1px solid var(--roxo-escuro);
+  background-color: var(--roxo-escuro);
+  border-radius: 30px;
+}
+
+.container_conteudo_avaliacao {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  font-family: Plus Jakarta Sans;
+}
+
+.imagem_avaliacao {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+
+.conteudo_avaliacao_title {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.conteudo_avaliacao_title h3 {
+  padding: 2px;
+  font-size: 20px;
+  color: var(--amarelo);
+}
+
+#name_person {
+  font-weight: 600;
+}
+
+#crp_person {
+  font-weight: 200;
+}
+
+/* Parágrafo */
+
+.avaliacao_conteudo_h5 {
+  width: 100%;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+}
+
+.avaliacao_conteudo_h5 h5 {
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: var(--branco);
+  text-align: left;
+}
+
+/* Junte-se a nós */
+
+.junte-se {
+  width: 50%;
+  display: flex;
+  margin: 2% auto;
+  justify-content: center;
+}
+
+.junte-se h1 {
+  font-family: Fraunces;
+  font-size: 40px;
+  color: var(--roxo-claro-dois);
+}
+
+/* Button cadaastro */
+
+#cadastro_avaliacao {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 40px;
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border-radius: 47px;
+  font-size: 20px;
+}
+
+#cadastro_avaliacao:hover {
+  background-color: var(--amarelo-hover);
+  border: 3px solid var(--roxo-dark);
+}
+
+/* SECTION CINCO */
+
+.section_cinco {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 5% auto;
+  border: 1px solid red;
+}
+
+/* Imagens de fundo */
+
+#imagem_fund_section_cinco_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#imagem_fund_section_cinco_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* Container */
+
+.container_section_cinco {
+  width: 90%;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  margin: 8% auto;
+}
+
+.about_section_cinco {
+  display: flex;
+  margin: 0 auto;
+  font-family: Fraunces;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--branco);
+}
+
+/* Logo */
+
+.section_cinco_logo {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+}
+
+.section_cinco_logo img {
+  width: 100%;
+  height: auto;
+}
+
+.logo_texts_section_cinco {
+  font-family: Fraunces;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo_texts_section_cinco h1 {
+  color: var(--branco);
+  margin: 0 auto;
+  font-size: 60px;
+}
+
+#text_s_cinco {
+  color: var(--amarelo);
+  font-style: italic;
+}
+
+.logo_texts_section_cinco p {
+  font-size: 26px;
+  color: var(--branco);
+  letter-spacing: 1px;
+  margin-top: -10px;
+}
+
+/* Imagem equipe */
+
+.imagem_equipe {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  margin: 15% auto;
+  border: 2px solid red;
+}
+
+/* Conteúdo do sobre */
+
+.about_conteudo_section_cinco {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  margin: -5% auto;
+  background-color: var(--amarelo);
+  border-radius: 180px 10px 180px 10px;
+}
+
+.about_conteudo_section_cinco h3 {
+  font-family: Plus Jakarta Sans;
+  text-align: center;
+  margin: 0 auto;
+  padding: 64px;
+  width: 90%;
+  font-size: 25px;
+}
+
+.about_conteudo_section_cinco {
+}
+
+#text_about_s_cinco {
+  color: var(--roxo-escuro);
 }
