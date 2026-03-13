@@ -25,6 +25,14 @@
             <h2 id="h2_logo">Convers<span>aê</span></h2>
             <p id="p_logo">Mente em dia, vida em equilíbrio</p>
           </div>
+          <!-- Mobile -->
+          <div class="menu_mob">
+            <img
+              src="../images/home_psicologo/Mobile/Menu.png"
+              alt=""
+              id="menu_icon"
+            />
+          </div>
           <div class="navbar_links">
             <a href="#inicio">Início</a>
             <a href="#como_funciona">Como funciona</a>
@@ -37,6 +45,23 @@
         </div>
       </nav>
     </header>
+    <!-- Menu Mobile -->
+
+    <div class="mobile_menu_overlay" id="mobileMenu">
+      <button class="close_menu" id="closeMenu">&#10005;</button>
+      <nav class="mobile_nav_links">
+        <a href="#inicio">Início</a>
+        <a href="#como_funciona">Como funciona</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#">Sou psicólogo</a>
+        <!-- <a href="#">Contato</a>
+        <button class="mob_btn_primary">Vamos conversar</button> -->
+        <a href="#" class="mob_link_plain">Criar conta</a>
+        <button class="mob_btn_secondary">Entrar</button>
+      </nav>
+    </div>
+
+    <!--  -->
     <main id="inicio">
       <section class="section_one">
         <img
@@ -55,10 +80,15 @@
             <div class="container_titles">
               <h1>Junte-se ao Conversaê hoje mesmo!</h1>
               <br />
-              <p>Atenda pacientes sem sair de casa, tenha o controle de</p>
-              <p>sua agenda e muito mais.</p>
+              <p id="mob_p">
+                Atenda pacientes sem sair de casa, tenha o controle de sua
+                agenda e muito mais.
+              </p>
+              <p id="p_desk">
+                Atenda pacientes sem sair de casa, tenha o controle de
+              </p>
+              <p id="p_desk">sua agenda e muito mais.</p>
               <br />
-              <p id="text2">Tudo isso você encontra no Conversaê!</p>
               <br />
               <div class="btn"><button id="inscrever">Inscreva-se</button></div>
             </div>
@@ -80,7 +110,17 @@
         </div>
         <p></p>
         <div class="image_section_dois">
-          <img src="../images/home_psicologo/image-section-dois.png" alt="" />
+          <img
+            src="../images/home_psicologo/image-section-dois.png"
+            alt=""
+            id="image_section_02"
+          />
+
+          <img
+            src="../images/home_psicologo/image-section-dois_mobile.png"
+            alt=""
+            id="mobile_image_section_02"
+          />
         </div>
 
         <div class="conteudo_section_dois">
@@ -214,8 +254,8 @@
         <div class="mensalidade">
           <div class="container_elements_mensalidade">
             <h2>
-              Tenha tudo isso e mais vantagens
-              <h2 id="mens">por uma pequena mensalidade</h2>
+              Tenha tudo isso e mais vantagens por uma
+              <span id="mens"> pequena mensalidade</span>
             </h2>
 
             <div class="elements_dois">
@@ -276,13 +316,13 @@
                   id="passo_um_img_1"
                 />
                 <img
-                  src="../images/home_psicologo/passo_um_como_funciona/image 2.png"
+                  src="../images/home_psicologo/passo_um_como_funciona/image 4.png"
                   alt=""
                   id="passo_um_img_2"
                 />
 
                 <p id="passo_um_p">
-                  Defina seus horários de atendimento e valores
+                  Receba solicitações e atenda seus pacientes online
                 </p>
 
                 <img
@@ -438,6 +478,19 @@
           id="imagem_fund_section_cinco_2"
         />
 
+        <!-- Mobile Vectors-->
+        <img
+          src="../images/home_psicologo/Mobile/Vector 58.png"
+          alt=""
+          id="imagem_fund_section_cinco_1_mob"
+        />
+        <img
+          src="../images/home_psicologo/Mobile/Vector 57.png"
+          alt=""
+          id="imagem_fund_section_cinco_2_mob"
+        />
+        <!--  -->
+
         <div class="container_section_cinco">
           <div class="about_section_cinco">
             <h1>Sobre nós</h1>
@@ -535,7 +588,7 @@
           </div>
         </div>
         <div class="copright">
-          <p>&copy; Copyright 2026. Todos os direitos reservados.</p>
+          <p>Conversaê &copy; Copyright 2026. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
@@ -551,5 +604,7 @@
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
+
+    <script src="../JavaScript/index.js"></script>
   </body>
 </html>
