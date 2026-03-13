@@ -183,7 +183,7 @@ section{
 
 #caixa2{
     position: relative;
-    margin-top: 25px;
+    margin-top: 50px;
     width: 55%;
     height: 650px;
     background-color: #D5C5E6;
@@ -260,14 +260,7 @@ footer{
     margin: auto;
     background-color:rgb(59, 17, 99);
 }
-f{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: auto;
-    align-content: left;
-    margin-left: 5%;
-}
+
 #footer1{
     position: relative;
     display: flex;
@@ -278,10 +271,7 @@ f{
     align-content: left;
     margin-left: 5%;
 }
-#logo2{
-    width: auto;
-    height: auto;
-}
+
 #contato{
     height: 40px;
     width: 100px;
@@ -324,6 +314,14 @@ f{
  font-size: 15px;
  color: var(--branco);
 }
+.container_logo_footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
 
 #footer2{
     margin-top: -72px;
@@ -376,7 +374,7 @@ f{
     font-weight: bolder;}
 
 #direitos{
-    width: 51%;
+    width: 55%;
     position: relative;
     color: white;
     display: flex;
