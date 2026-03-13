@@ -19,18 +19,25 @@
   --amarelo-hover: #d9c45f;
 }
 
+main {
+  padding-top: 127px;
+}
+
 /* Navbar */
 
 .navbar {
+  position: fixed;
   width: 100%;
-  height: 120px;
+  height: 130px;
   background-color: var(--branco);
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 10;
 }
 
 .logo_nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -42,7 +49,9 @@
 .nav_title_logo {
   padding: 0.5rem;
   font-family: Fraunces;
+  position: relative;
   width: 35%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -57,11 +66,13 @@
 }
 
 #h2_logo {
+  margin: 0;
   color: var(--roxo-claro);
   font-style: italic;
 }
 
 #p_logo {
+  margin: 0;
   font-size: 15px;
   color: var(--roxo-escuro);
 }
@@ -69,30 +80,33 @@
 /*Links da Navbar */
 
 .navbar_links {
-  width: 100%;
+  position: relative;
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 150px;
+  justify-content: space-around;
 }
 
 .navbar_links a {
   font-family: Fraunces;
   font-size: 20px;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
 }
 
-.navbar_links h4 {
+/* Botões */
+
+#buttons_nav {
+  align-items: center;
+  width: 50%;
+  height: auto;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
-  gap: 30px;
 }
 
-/* Botões navbar */
-
-.navbar_links button {
+#buttons_nav button {
   font-family: Fraunces;
   font-size: 20px;
   width: 200px;
@@ -118,56 +132,50 @@
   transition: 0.1s ease-in-out;
 }
 
-/* Section 01 */
-
-.section_one {
+.section1{
   width: 100%;
   height: 705px;
-  margin: 0 auto;
 }
 
-.section_one img{
-    width: 100%;
-    height: auto;
-}
-
-/* Imagens de fundo da section1 */
-
-/* #vector_fund2 {
+#onda1{
   position: absolute;
   width: 100%;
-  height: 750px;
-  z-index: 1;
-
+  height: 855px;
+  z-index: 2;
 }
 
-#vector_fund1 {
-position: absolute;
+#onda2{
+  position: absolute;
   width: 100%;
-  height: 750px;
-  z-index: 2;
+  height: 855px;
+  z-index: 1;
+  top: 90px;
 }
 
 /* Section dos conteúdos da section1 */
 
 .container_section_one {
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 90%;
-  /* border: 2px solid red; */
-  z-index: 1;
+  height: 100%;
+  z-index: 2;
+  border: 2px solid red;
 }
 
 /* Container dos conteúdos */
 
 .container_um {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 95%;
-  height: 90%;
+  height: 700px;
   margin: 0 auto;
+  margin-top: 15px;
+  border: 2px solid red;
 }
 
 /* Container titles */
@@ -179,18 +187,20 @@ position: absolute;
 .container_um h1 {
   font-family: Fraunces;
   color: var(--roxo-dark);
-  font-size: 40px;
-  margin-top: 2rem;
+  font-size: 60px;
+  margin-top: 100px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .container_um p {
   width: 95%;
-  text-align: center;
+  text-align: left;
   font-family: Plus Jakarta Sans;
-  font-size: 18px;
+  font-size: 22px;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 #text2 {
@@ -198,11 +208,11 @@ position: absolute;
   font-weight: 500;
 }
 
-/* Botão inscreva-se */
-
 .btn {
   margin: 0 auto;
   width: 50%;
+  float: left;
+  margin-left: 20px;
 }
 
 .btn #inscrever {
@@ -221,347 +231,18 @@ position: absolute;
   transition: 0.1s ease-in-out;
 }
 
-/* Container imagem Section_um */
-
-.container_imagem {
+.container_imagem{
   width: 50%;
-  height: 400px;
+  height: 780px;
   align-items: center;
   justify-items: center;
   display: flex;
-}
-
-/* Imagem da section_um */
-
-#imagem_section_um {
-  margin: 0 auto;
-  width: 50%;
-  height: auto;
-}
-
-/* SECTION DOIS */
-
-.section_dois {
-  width: 100%;
-  height: 300px;
-}
-
-#title_section_dois {
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-#title_section_dois h1 {
-  font-family: Fraunces;
-  font-size: 40px;
-  color: var(--roxo-claro-dois);
-}
-
-/* Imagem section dois */
-
-.image_section_dois {
-  padding: 1rem;
-  width: 70%;
-  display: flex;
-  margin: auto;
-}
-
-.image_section_dois img {
-  width: 100%;
-  height: auto;
-}
-
-/* Caminhos abaixo da imagem da section dois */
-
-.conteudo_section_dois {
-  display: flex;
-  margin: 0 auto;
-  width: 70%;
-  height: 1200px;
-}
-
-#imagem-fundo-section-dois {
-  position: absolute;
-  top: 0;
-  left: 30%;
-  width: 40%;
-  height: 100%;
-  z-index: -2;
-}
-
-/* Conteúdo um - casa */
-
-.imagem_conteudo_um {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 4%;
-  left: 63%;
-}
-
-.imagem_conteudo_um img {
-  width: 100%;
-  height: 100%;
-}
-
-.conteudo_um_s_dois {
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  width: 350px;
-  height: 100px;
-  border: 2px solid var(--roxo-dark);
-  z-index: -1;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.container_text_conteudo_um {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-  top: 45%;
-}
-
-.container_text_conteudo_um p {
-  font-family: Plus Jakarta Sans;
-  color: var(--roxo-dark);
-  font-weight: 600;
-}
-
-/* Conteúdo dois - agenda */
-
-.imagem_conteudo_dois {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 19%;
-  left: 23%;
-}
-
-.imagem_conteudo_dois img {
-  width: 100%;
-  height: 100%;
-}
-
-.conteudo_dois_s_dois {
-  position: absolute;
-  top: 22%;
-  left: 10%;
-  width: 350px;
-  height: 100px;
-  border: 2px solid var(--roxo-dark);
-  z-index: -1;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.container_text_conteudo_dois {
-  margin: 0 auto;
-  width: 60%;
-  text-align: center;
-  top: 45%;
-}
-
-.container_text_conteudo_dois p {
-  font-family: Plus Jakarta Sans;
-  color: var(--roxo-dark);
-  font-weight: 600;
-}
-
-/* Conteúdo três - diploma */
-
-.imagem_conteudo_tres {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 37%;
-  left: 63%;
-}
-
-.imagem_conteudo_tres img {
-  width: 100%;
-  height: 100%;
-}
-
-.conteudo_tres_s_dois {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 350px;
-  height: 100px;
-  border: 2px solid var(--roxo-dark);
-  z-index: -1;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.container_text_conteudo_tres {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-  top: 45%;
-}
-
-.container_text_conteudo_tres p {
-  font-family: Plus Jakarta Sans;
-  color: var(--roxo-dark);
-  font-weight: 600;
-}
-
-/* Conteúdo quatro - people */
-
-.imagem_conteudo_quatro {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 49%;
-  left: 23%;
-}
-
-.imagem_conteudo_quatro img {
-  width: 100%;
-  height: 100%;
-}
-
-.conteudo_quatro_s_dois {
-  position: absolute;
-  top: 52%;
-  left: 10%;
-  width: 350px;
-  height: 100px;
-  border: 2px solid var(--roxo-dark);
-  z-index: -1;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.container_text_conteudo_quatro {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-  top: 45%;
-}
-
-.container_text_conteudo_quatro p {
-  font-family: Plus Jakarta Sans;
-  color: var(--roxo-dark);
-  font-weight: 600;
-}
-
-/* Conteúdo cinco - money */
-
-.imagem_conteudo_cinco {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 67%;
-  left: 63%;
-}
-
-.imagem_conteudo_cinco img {
-  width: 100%;
-  height: 100%;
-}
-
-.conteudo_cinco_s_dois {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  width: 350px;
-  height: 100px;
-  border: 2px solid var(--roxo-dark);
-  z-index: -1;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.container_text_conteudo_cinco {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-  top: 45%;
-}
-
-.container_text_conteudo_cinco p {
-  font-family: Plus Jakarta Sans;
-  color: var(--roxo-dark);
-  font-weight: 600;
-}
-
-/* Conteúdo seis - inclusão */
-
-.imagem_conteudo_seis {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 81%;
-  left: 23%;
-}
-
-.imagem_conteudo_seis img {
-  width: 100%;
-  height: 100%;
-}
-
-.conteudo_seis_s_dois {
-  position: absolute;
-  top: 84%;
-  left: 10%;
-  width: 350px;
-  height: 100px;
-  border: 2px solid var(--roxo-dark);
-  z-index: -1;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.container_text_conteudo_seis {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-  top: 45%;
-}
-
-.container_text_conteudo_seis p {
-  font-family: Plus Jakarta Sans;
-  color: var(--roxo-dark);
-  font-weight: 600;
-}
-
-/* Botão cadastro */
-
-.btn_cad {
-  margin: 2rem;
-  width: 40%;
-  margin: 0 auto;
-}
-
-.btn_cad button {
-  width: 100%;
-  text-align: center;
-  background-color: var(--amarelo);
-  height: 40px;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--roxo-dark);
-  border-radius: 47px;
-}
-
-.btn_cad button:hover {
-  background-color: var(--amarelo-hover);
-  border: 3px solid var(--roxo-dark);
-  transition: 0.1s ease-in-out;
-}
-
-/* SECTION TRES */
-
-/* 
-.section_tres {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: #000;
+  margin-left: 135px;
+  margin-top: 25px;
   border: 2px solid red;
-} */
+}
+
+#imagem_section_um{
+  width: 100%;
+  height: 100%;
+}
