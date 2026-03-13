@@ -556,6 +556,7 @@ main {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
+  gap: 15px;
 }
 
 #passo_um_img_1 {
@@ -1021,7 +1022,6 @@ footer {
   }
 
   .nav_title_logo {
-    /* border: 1px solid red; */
     width: 100%;
   }
 
@@ -1029,7 +1029,6 @@ footer {
     display: flex;
     width: 10%;
     height: auto;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1228,7 +1227,6 @@ footer {
 
   .container_um_sec2,
   #conteudo_esquerda {
-    /* border: 1px solid red; */
     width: 100%;
     height: 250px;
     align-items: center;
@@ -1240,7 +1238,6 @@ footer {
   }
 
   .container_conteudo_um p {
-    /* border: 1px solid red; */
     width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
@@ -1756,8 +1753,6 @@ footer {
     .section_cinco_logo {
       width: 60%;
       height: 280px;
-
-      border: 1px solid red;
     }
 
     .section_cinco_logo img {
@@ -1882,6 +1877,143 @@ footer {
       width: 100%;
       text-align: center;
       margin-top: 2%;
+    }
+  }
+
+  /* RESPONSIVIDADE NOTEBOOK 1061px a 1390px */
+
+  @media only screen and (min-width: 1061px) {
+    @media only screen and (max-width: 1390px) {
+      /* Navbar */
+
+      .logo_nav {
+        width: 95%;
+      }
+
+      #buttons_nav {
+        width: 30%;
+        gap: 5px;
+      }
+
+      #buttons_nav button {
+        font-size: 18px;
+      }
+
+      .navbar_links a {
+        font-size: 20px;
+      }
+
+      /* Logo */
+
+      #h2_logo {
+        font-size: 30px;
+      }
+
+      #p_logo {
+        font-size: 18px;
+      }
+
+      /* SECTION ONE */
+
+      #vector_fund1 {
+        top: -1%;
+      }
+
+      .container_titles h1 {
+        font-size: 38px;
+      }
+
+      #p_desk {
+        font-family: 20px;
+      }
+
+      #imagem_section_um {
+        width: 60%;
+      }
+
+      #imagem-fundo-section-dois {
+        top: 1%;
+        left: 10%;
+        width: 80%;
+        height: 2100px;
+      }
+
+      .conteudo_section_dois {
+        width: 90%;
+      }
+
+      .container_um_sec2 {
+        height: 340px;
+      }
+
+      .conteudo_um_s_dois {
+        width: 50%;
+      }
+
+      /* Mensalidade */
+
+      .mensalidade {
+        width: 70%;
+      }
+
+      /* Como funciona */
+
+      .como_funciona {
+        width: 80%;
+      }
+
+      #como_funciona_p {
+        font-size: 30px;
+      }
+
+      #passo_um_p {
+        font-size: 28px;
+      }
+
+      .title_section_tres {
+        width: 80%;
+      }
+
+      .container_avaliacao {
+        width: 80%;
+      }
+
+      /* Sobre */
+
+      .section_cinco {
+        height: 2400px;
+      }
+
+      .about_section_cinco {
+        padding-top: 15%;
+        padding-bottom: 10%;
+      }
+
+      .about_section_cinco h1 {
+        font-size: 55px;
+      }
+      .section_cinco_logo {
+        width: 60%;
+        height: 500px;
+      }
+
+      .section_cinco_logo img {
+        width: 60%;
+        margin: 0 auto;
+      }
+      .about_conteudo_section_cinco {
+        width: 80%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #imagem-fundo-section-dois {
+      height: 2100px;
+    }
+
+    .about_conteudo_section_cinco h3 {
+      font-size: 26px;
     }
   }
 }

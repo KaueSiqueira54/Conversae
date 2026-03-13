@@ -27,17 +27,14 @@ const menuIconTab = document.getElementById("menu_tab");
 const tabMenu = document.getElementById("mobileMenu");
 const closeMenuTab = document.getElementById("closeMenu");
 
-// Abre o menu ao clicar no icone
 menuIconTab.addEventListener("click", () => {
   tabMenu.classList.add("active");
 });
 
-// Fecha o menu
 closeMenuTab.addEventListener("click", () => {
   tabMenu.classList.remove("active");
 });
 
-// Fecha o menu ao clicar em qualquer link
 document.querySelectorAll(".mobile_nav_links a").forEach((link) => {
   link.addEventListener("click", () => {
     tabMenu.classList.remove("active");
