@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background-color: #fffaf6;
+  font-family: Fraunces;
+}
+
+
+.container_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  width: 90%;
+  height: 800px;
+  background-color: #f4e5ff;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: flex;
+  margin: 2% auto; /* deixa no centro */
+  margin-top: 4%;
+}
+
+.container_titulo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+#titulo {
+  position: relative;
+  color: #37006c;
+  font-size: 20px;
+}
+
+#titulo h1 {
+  font-weight: 600;
+}
+
+#sobrenome,
+#nome,
+#data,
+#email,
+#senha {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid rgb(194, 191, 191);
+}
+
+#circulo {
+  position: relative;
+  display: flex;
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 20px;
+  height: 35px;
+}
+
+p {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-left: 6%;
+  margin-top: -3%;
+  font-size: 18px;
+}
+
+#imagem{
+    position: relative;
+    display: flex;
+    margin-left: 900px;
+    margin-top: 20px;
+    width: 300px;
+    height: 700px;
+}
+
+/* .botao{
+    position: relative;
+    display: flex;
+    margin-left: 2%;
+    width: 30px;
+    height: 40px;
+} */
