@@ -17,10 +17,17 @@
   --roxo-dark: #37006c;
   --amarelo: #ffe778;
   --amarelo-hover: #d9c45f;
+  --amarelo-retangulos: rgba(255, 231, 120, 0.5);
+  --preto: #000;
+  --branco-fundo: #fffaf6;
 }
 
 main {
   padding-top: 127px;
+}
+
+body {
+  background-color: var(--branco-fundo);
 }
 
 /* Navbar */
@@ -34,6 +41,7 @@ main {
   flex-direction: row;
   align-items: center;
   z-index: 10;
+  border-bottom: 2px solid var(--roxo-dark);
 }
 
 .logo_nav {
@@ -132,12 +140,12 @@ main {
   transition: 0.1s ease-in-out;
 }
 
-.section1{
+.section1 {
   width: 100%;
   height: 705px;
 }
 
-#onda1{
+#onda1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,8 +154,7 @@ main {
   z-index: -1;
 }
 
-
-#onda2{
+#onda2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -155,7 +162,6 @@ main {
   height: 1100px;
   z-index: -2;
 }
-
 
 /* Section dos conteúdos da section1 */
 
@@ -256,7 +262,6 @@ main {
   font-size: 40px;
   color: var(--roxo-claro-dois);
   background-color: white;
-  
 }
 
 .conteudo_section_dois {
@@ -371,4 +376,183 @@ main {
   background-color: var(--amarelo-hover);
   border: 3px solid var(--roxo-dark);
   transition: 0.1s ease-in-out;
+}
+
+/* SECTION TRÊS - Siqueira */
+
+.section_tres {
+  width: 100%;
+  height: 1800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container section - div */
+
+.container_section_tres {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+/* img */
+
+.section_tres img {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  z-index: -2;
+}
+
+/* Containers*/
+
+/* Containe esquerda */
+
+.container_conteudo_section_tres {
+  width: 50%;
+  height: 1000px;
+}
+
+/* Container Direita img */
+
+.container_image_section_tres {
+  width: 50%;
+  height: 1000px;
+}
+
+.container_image_section_tres img {
+  width: 100%;
+}
+
+/* Container texts */
+
+.container_content_section_tres {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+/* h1 */
+
+.container_content_section_tres h1 {
+  font-family: Fraunces;
+  font-size: 60px;
+  color: var(--roxo-escuro);
+}
+
+/* p */
+
+.container_content_section_tres p {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Plus Jakarta Sans;
+  font-size: 25px;
+  padding-top: 30px;
+  font-weight: 500;
+  color: var(--roxo-escuro);
+}
+
+/* Span */
+
+.container_content_section_tres span {
+  color: var(--roxo-dark);
+  font-weight: 800;
+}
+
+/* Container ratângulos */
+
+.container_retangles_section_tres {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Retangulos */
+
+.ratangle_sec_tres {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  border: 6px solid var(--branco);
+  background-color: rgba(255, 231, 120, 0.5);
+  border-radius: 16px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+}
+
+/* img */
+
+.img_retangle {
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+}
+
+.img_retangle img {
+  width: 100%;
+}
+
+.ratangle_sec_tres span {
+  font-weight: 700;
+  color: var(--roxo-dark);
+}
+
+.ratangle_sec_tres p {
+  width: 80%;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+/* Botão */
+
+.container_buttons_sec_tres {
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
+  font-family: Fraunces;
+}
+
+.btn_roxo {
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: var(--roxo-escuro);
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.btn_amarelo {
+  width: 40%;
+  height: 60px;
+  background-color: var(--amarelo);
+  margin: -1% auto;
+  border-radius: 37px;
+  border: 2px solid var(--roxo-escuro);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--roxo-dark);
+}
+
+.btn_amarelo:hover {
+  border: 4px solid var(--roxo-dark);
 }
