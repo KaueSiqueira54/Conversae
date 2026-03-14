@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Psicólogo</title>
+    <title>Conversaê</title>
 
     <link rel="stylesheet" href="styles/index.css" type="text/css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="28x20"
+      href="../Conversae/images/index/Logotipo-2.png"
+    />
 
     <!-- Fontes -->
     <style>
@@ -16,28 +24,62 @@
     <header>
       <nav class="navbar">
         <div class="logo_nav">
-          <img src="images/index/logonav.svg" alt="" id="logo" />
+          <img
+            src="../Conversae/images/index/logo-navbar.png"
+            alt="Logo do Conversaê"
+            id="logo"
+          />
           <div class="nav_title_logo">
-            <h2 id="h2_logo">
-              aê
-              <div id="logo_2">Convers</div>
-            </h2>
+            <h2 id="h2_logo">Convers<span>aê</span></h2>
             <p id="p_logo">Mente em dia, vida em equilíbrio</p>
           </div>
+          <!-- Mobile -->
+          <div class="menu_mob">
+            <img
+              src="../Conversae/images/index/Mobile/Menu.png"
+              alt="Icone de Menu"
+              id="menu_icon"
+            />
+          </div>
+          <!-- Tablet -->
+          <div class="menu_tab">
+            <img
+              src="../Conversae/images/index/Tablet/Menu_2.png"
+              alt="Icone de Menu"
+              id="menu_tab"
+            />
+          </div>
+          <!--  -->
           <div class="navbar_links">
             <a href="#inicio">Início</a>
             <a href="#como_funciona">Como funciona</a>
-            <a href="">Sobre nós</a>
-          </div>
-          <div id="buttons_nav">
-            <button id="login">Fazer Login</button>
-            <button id="cadastro">Fazer Cadastro</button>
+            <a href="#sobre">Sobre nós</a>
+            <div id="buttons_nav">
+              <button id="conversar">Vamos conversar</button>
+            </div>
+            <a href="#Contato">Criar Conta</a>
+            <div id="buttons_nav">
+              <button id="entrar">Entrar</button>
+            </div>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Menu Mobile -->
 
-    <main>
+    <div class="mobile_menu_overlay" id="mobileMenu">
+      <button class="close_menu" id="closeMenu">&#10005;</button>
+      <nav class="mobile_nav_links">
+        <a href="#inicio">Início</a>
+        <a href="#como_funciona">Como funciona</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#">Sou psicólogo</a>
+        <a href="#" class="mob_link_plain">Criar conta</a>
+        <button class="mob_btn_secondary">Entrar</button>
+      </nav>
+    </div>
+
+    <main id="inicio">
       <section class="section1">
         <img id="onda1" src="images/index/ondamask.png" />
         <img id="onda2" src="images/index/onda2.svg " />
@@ -205,7 +247,7 @@
                   <div class="img_retangle">
                     <img
                       src="images/index/Section_tres/material-symbols_schedule-outline-rounded.png"
-                      alt=""
+                      alt="Icone de um relógio com um ponteiro no meio."
                     />
                   </div>
                   <p>
@@ -227,7 +269,7 @@
                   <div class="img_retangle">
                     <img
                       src="images/index/Section_tres/material-symbols_warning-outline-rounded.png"
-                      alt=""
+                      alt="Icone de perigo."
                     />
                   </div>
                   <p><span>Sobrecarga: </span>profissionais sobrecarregados</p>
@@ -252,16 +294,16 @@
         </div>
       </section>
 
-      <section class="section_quatro">
+      <section class="section_quatro" id="como_funciona">
         <img
           src="images/index/section_quatro/Vector 57-1.png"
-          alt=""
+          alt="Vetor branco de fundo da tela."
           id="image_fundo_sec_quatro_1"
         />
 
         <img
           src="images/index/section_quatro/Vector 57.png"
-          alt=""
+          alt="Vetor roxo de fundo da tela."
           id="image_fundo_sec_quatro_2"
         />
 
@@ -279,7 +321,7 @@
                 <div class="img_sec_4_conteudo">
                   <img
                     src="images/index/section_quatro/material-symbols_checklist-rounded.png"
-                    alt=""
+                    alt="Simbolo de cheklist."
                   />
                 </div>
 
@@ -298,7 +340,7 @@
                 <div class="img_sec_4_conteudo">
                   <img
                     src="images/index/section_quatro/material-symbols_person-search-outline-rounded.png"
-                    alt=""
+                    alt="Simbolo de busca, com uma pessoa e uma bússola."
                   />
                 </div>
 
@@ -317,7 +359,7 @@
                 <div class="img_sec_4_conteudo">
                   <img
                     src="images/index/section_quatro/material-symbols_event-available-outline-rounded.png"
-                    alt=""
+                    alt="Icone de um agenda com uma seta de acerto no centro."
                   />
                 </div>
 
@@ -351,7 +393,7 @@
                 <div class="img_content_1">
                   <img
                     src="images/index/Section_cinco/material-symbols_psychology-alt-outline-rounded.png"
-                    alt=""
+                    alt="Icone de uma cabeça com uma interrogação no meio."
                   />
                 </div>
                 <h2>Métodos comprovados</h2>
@@ -361,7 +403,7 @@
                 <div class="img_content_1">
                   <img
                     src="images/index/Section_cinco/material-symbols_groups-outline-rounded.png"
-                    alt=""
+                    alt="Icone com três pessoas."
                   />
                 </div>
                 <h2>Abordagem acolhedora</h2>
@@ -371,7 +413,7 @@
                 <div class="img_content_1">
                   <img
                     src="images/index/Section_cinco/material-symbols_check-circle-outline-rounded.png"
-                    alt=""
+                    alt="Icone de acerto."
                   />
                 </div>
                 <h2>Profissionais verificados</h2>
@@ -383,7 +425,12 @@
           </div>
 
           <div class="container_sec_cinco_conteudo_2">
-            <img src="images/index/Section_cinco/Imagens.png" alt="" />
+            <img
+              src="images/index/Section_cinco/Imagens.png"
+              alt="
+              Há uma mulher branca de cabelos cacheados sorrindo enquanto escreve em um caderno. Um Homem jovem de cabelos escuros olhando pensativo para uma janela com gotas de chuva. Há Duas mulheres se abraçando com expressão de tristeza e acolhimento. Há também uma família negra feliz composta por pai, mãe e bebê sorrindo em um ambiente externo arborizado.
+            "
+            />
           </div>
         </div>
       </section>
@@ -465,16 +512,15 @@
           <div class="conteudo_text_aviso">
             <h2>Atenção: Este não é um serviço de emergência.</h2>
             <p>
-              Se você está em crise ou em risco de vida, o <span><i>Conversaê</i></span> não é o
-              canal adequado para o seu atendimento. Nossos profissionais
-              atendem apenas de forma agendada. Por favor, procure o pronto
-              socorro mais próximo ou entre em contato com o <span>
-                CVV (Centro de
-                Valorização da Vida)
-              </span> pelo número <span>188</span> ou acesse o site
-              <span>www.cvv.org.br.</span> O atendimento é gratuito, sigiloso e disponível
-              24h. Em caso de emergência, procure atendimento em um hospital
-              mais próximo.
+              Se você está em crise ou em risco de vida, o
+              <span><i>Conversaê</i></span> não é o canal adequado para o seu
+              atendimento. Nossos profissionais atendem apenas de forma
+              agendada. Por favor, procure o pronto socorro mais próximo ou
+              entre em contato com o
+              <span> CVV (Centro de Valorização da Vida) </span> pelo número
+              <span>188</span> ou acesse o site <span>www.cvv.org.br.</span> O
+              atendimento é gratuito, sigiloso e disponível 24h. Em caso de
+              emergência, procure atendimento em um hospital mais próximo.
             </p>
           </div>
         </div>
