@@ -807,10 +807,15 @@ main {
 
 .imagem_equipe {
   width: 60%;
-  height: 500px;
+  height: auto;
   display: flex;
   margin: 15% auto;
-  border: 2px solid red;
+}
+
+.imagem_equipe img {
+  width: 100%;
+  border-radius: 40px;
+  border: 2px solid var(--roxo-dark);
 }
 
 /* Conteúdo do sobre */
@@ -1409,7 +1414,12 @@ footer {
 
   .imagem_equipe {
     width: 80%;
-    height: 250px;
+    height: auto;
+  }
+
+  .imagem_equipe img {
+    width: 100%;
+    height: auto;
   }
 
   .about_conteudo_section_cinco {
@@ -1773,6 +1783,7 @@ footer {
 
     .imagem_equipe {
       width: 80%;
+      height: auto;
     }
 
     .about_conteudo_section_cinco {
