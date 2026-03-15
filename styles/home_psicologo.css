@@ -33,6 +33,11 @@
   display: none;
 }
 
+a {
+  color: var(--roxo-escuro);
+  text-decoration: none;
+}
+
 /*  */
 
 main {
@@ -826,9 +831,6 @@ main {
   padding: 64px;
   width: 90%;
   font-size: 25px;
-}
-
-.about_conteudo_section_cinco {
 }
 
 #text_about_s_cinco {

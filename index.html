@@ -46,7 +46,7 @@
             <img
               src="../Conversae/images/index/Tablet/Menu_2.png"
               alt="Icone de Menu"
-              id="menu_tab"
+              id="menu_icon_tab"
             />
           </div>
           <!--  -->
@@ -73,8 +73,9 @@
         <a href="#inicio">Início</a>
         <a href="#como_funciona">Como funciona</a>
         <a href="#sobre">Sobre Nós</a>
-        <a href="#">Sou psicólogo</a>
+        <a href="#sobre">Contato</a>
         <a href="#" class="mob_link_plain">Criar conta</a>
+        <button class="mob_btn_secondary">Vamos conversar</button>
         <button class="mob_btn_secondary">Entrar</button>
       </nav>
     </div>
@@ -88,12 +89,23 @@
           <div class="container_um">
             <div class="container_titles">
               <h1>Você não precisa enfrentar tudo sozinho.</h1>
-              <br />
-              <p>Acolhimento profissional para o seu equilíbrio mental.</p>
-              <p>Agende uma sessão cortesia e encontre o psicólogo ideal</p>
-              <p>para o seu momento.</p>
-              <br />
-              <br />
+              <p class="tab_p">
+                Acolhimento profissional para o seu equilíbrio mental.
+              </p>
+              <p class="tab_p">
+                Agende uma sessão cortesia e encontre o psicólogo ideal para o
+                seu momento.
+              </p>
+              <br class="desk" />
+              <p class="desk">
+                Acolhimento profissional para o seu equilíbrio mental.
+              </p>
+              <p class="desk">
+                Agende uma sessão cortesia e encontre o psicólogo ideal
+              </p>
+              <p class="desk">para o seu momento.</p>
+              <br class="desk" />
+              <br class="desk" />
               <div class="btn">
                 <button id="inscrever">Quero minha sessão gratuita</button>
               </div>
@@ -106,7 +118,9 @@
         <div id="title_section_dois">
           <h1>5 motivos para ter uma sessão de terapia</h1>
         </div>
-
+        <div id="seta_reta">
+          <img src="images/index/Tablet/Vector 77.png" alt="" />
+        </div>
         <div class="conteudo_section_dois">
           <img
             id="cobrinhaimg"
@@ -228,6 +242,16 @@
       <section class="section_tres">
         <img src="images/index/icones/ondasout.svg" id="ondasout" />
 
+        <!-- Tablet -->
+        <div class="container_tablet_sec_3">
+          <img
+            src="../Conversae/images/index/Tablet/Vector 82.png"
+            alt=""
+            id=""
+          />
+        </div>
+        <!--  -->
+
         <div class="container_section_tres">
           <div class="container_conteudo_section_tres">
             <div class="container_content_section_tres">
@@ -283,6 +307,37 @@
               alt="Mulher preta apoiada em uma mesa, com uma mão no rosto e outra no queixo, preocupada, olhando o notebook a sua frente."
             />
           </div>
+          <div class="container_retangles_section_tres" id="retangle_tab">
+            <div class="ratangle_sec_tres">
+              <div class="img_retangle">
+                <img
+                  src="images/index/Section_tres/material-symbols_schedule-outline-rounded.png"
+                  alt="Icone de um relógio com um ponteiro no meio."
+                />
+              </div>
+              <p><span>Acesso limitado: </span>Longa espera na rede pública</p>
+            </div>
+            <!-- Retângulo dois -->
+            <div class="ratangle_sec_tres">
+              <div class="img_retangle">
+                <img
+                  src="images/index/Section_tres/material-symbols_payments-outline-rounded.png"
+                  alt=""
+                />
+              </div>
+              <p><span>Alto custo: </span>consultas privadas caras</p>
+            </div>
+            <!-- Retãngulo três -->
+            <div class="ratangle_sec_tres">
+              <div class="img_retangle">
+                <img
+                  src="images/index/Section_tres/material-symbols_warning-outline-rounded.png"
+                  alt="Icone de perigo."
+                />
+              </div>
+              <p><span>Sobrecarga: </span>profissionais sobrecarregados</p>
+            </div>
+          </div>
         </div>
         <div class="container_buttons_sec_tres">
           <div class="btn_roxo">
@@ -291,6 +346,14 @@
           <div class="btn_amarelo">
             <button>Agende sua sessão gratuita</button>
           </div>
+        </div>
+        <!-- Tablet -->
+        <div class="container_tablet_sec_4">
+          <img
+            src="../Conversae/images/index/Tablet/Vector 82.png"
+            alt=""
+            id=""
+          />
         </div>
       </section>
 
@@ -599,5 +662,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script src="../Conversae/JavaScript/index.js"></script>
   </body>
 </html>

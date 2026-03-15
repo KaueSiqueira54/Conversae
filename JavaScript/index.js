@@ -23,7 +23,7 @@ document.querySelectorAll(".mobile_nav_links a").forEach((link) => {
 
 // Menu tablet
 
-const menuIconTab = document.getElementById("menu_tab");
+const menuIconTab = document.getElementById("menu_icon_tab");
 const tabMenu = document.getElementById("mobileMenu");
 const closeMenuTab = document.getElementById("closeMenu");
 
