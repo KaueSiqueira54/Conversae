@@ -11,7 +11,6 @@ body {
   font-family: Fraunces;
 }
 
-
 .container_section {
   width: 100%;
   display: flex;
@@ -22,7 +21,7 @@ body {
 section {
   position: relative;
   width: 90%;
-  height: 800px;
+  height: 850px;
   background-color: #f4e5ff;
   border-radius: 5px;
   border: 1px solid gray;
@@ -49,52 +48,110 @@ section {
   font-weight: 600;
 }
 
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+}
+
 #sobrenome,
 #nome,
 #data,
 #email,
-#senha {
+#senha,
+#confirmar_senha {
   position: relative;
   width: 50%;
   height: 50px;
   font-size: 18px;
   display: flex;
   margin-left: 30px;
-  margin-top: 30px;
+  top: -650px;
   border: 1px solid rgb(194, 191, 191);
 }
 
 #circulo {
-  position: relative;
-  display: flex;
-  margin-left: 3%;
-  margin-top: 2%;
-  width: 20px;
-  height: 35px;
+  margin-top: -600px;
+  margin-left: 50px;
+  width: 10px;
+  height: 10px;
+}
+
+#bola {
+  border-radius: 50%;
+  border: 1px solid rgb(138, 133, 133);
+  background-color: #fdfcfe;
+  width: 40px;
+  height: 40px;
+}
+
+#bola:focus{
+    background-color: #ffe678;
 }
 
 p {
   position: relative;
   display: flex;
   width: 100%;
-  margin-left: 6%;
-  margin-top: -3%;
+  margin-left: 7%;
+  margin-top: -10px;
   font-size: 18px;
 }
 
-#imagem{
-    position: relative;
-    display: flex;
-    margin-left: 900px;
-    margin-top: 20px;
-    width: 300px;
-    height: 700px;
+#imagem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 400px; /* Controla a largura */
+  height: auto; /* A altura cresce proporcionalmente sem quebrar o layout */
+  object-fit: contain;
+  margin-top: 20px;
+  margin-left: 900px;
+  width: 50%;
+  height: 700px;
 }
 
-/* .botao{
-    position: relative;
-    display: flex;
-    margin-left: 2%;
-    width: 30px;
-    height: 40px;
-} */
+.botoes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 150px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+#can {
+  background-color: #ffe6787f;
+  color: #37006c;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: Frauces;
+  border: none;
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#pro {
+  background-color: #ffe6787a;
+  color: #37006c;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: Frauces;
+  width: 250px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#pro:hover{
+    transition: 1s all;
+    background-color: #ffe678;
+}
+
+#can:hover{
+    transition: 1s all;
+    background-color: #ffe678;
+}

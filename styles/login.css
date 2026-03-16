@@ -31,26 +31,27 @@ section{
    
 }
 
+
 .container_titulo{
-        position: relative;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
 }
 
-
-#titulo {
+#titulo{
     position: absolute;
+    top: 0; /* fica no topo da tela */
+    left: 50%;
+    transform: translateX(-50%); /* centraliza */
     color: #37006C;
     font-size: 20px;
-    margin-top: 4%;
-    margin-left: 3%;
-    float: left;
-    z-index: 1;
+    text-align: center;
 }
 
 #titulo h1{
     font-weight: 600;
+    white-space: nowrap; /* impede quebrar linha */
+    margin: 10px 0;
 }
 
 .imagem{
@@ -67,7 +68,7 @@ section{
 
 #rabisco{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin-top: -10%;
 }
@@ -76,8 +77,8 @@ section{
     position: absolute;
     width: 100%;
     height: 80%;
-    margin-top: 30px;
-    left: -20px;
+    margin-top: -10px;
+    left: -90px;
     z-index: 1;
 }
 
@@ -100,7 +101,8 @@ section{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 20%;
+    margin-left: -150px;
 }
 
 h2{
@@ -158,10 +160,10 @@ h2{
 
 button{
     position: relative;
-    background-color: #ffe67893;
+    background-color: #faedb2;
     color: #37006C;
-    width: 50%;
-    height: 40px;
+    width: 70%;
+    height: 45px;
     border-radius: 47px;
     display: flex;
     justify-content: center;
@@ -169,6 +171,7 @@ button{
     align-items: center;
     font-size: 26px;
     margin: 2% auto;
+    margin-top: 18px;
 }
 
 button:hover{
@@ -184,6 +187,7 @@ button:hover{
     justify-content: space-around;
     align-items: center;
     margin-top: -2%;
+    margin-left: -300px;
 }
 
 
