@@ -1,175 +1,179 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-main{
-    position: relative;
-    width: 100%;
-    background-color: rgb(59, 17, 99);
+main {
+  position: relative;
+  width: 100%;
+  background-color: rgb(59, 17, 99);
 }
 
 /* Variáveis de cor */
- 
+
 :root {
- --branco: #ffff;
- --roxo-escuro: #591799;
- --roxo-claro: #c77dff;
- --roxo-dark: #37006c;
- --amarelo: #ffe778;
+  --branco: #ffff;
+  --roxo-escuro: #591799;
+  --roxo-claro: #c77dff;
+  --roxo-dark: #37006c;
+  --amarelo: #ffe778;
+  --amarelo-hover: #d9c45f;
 }
- 
+
 /* Navbar */
- 
+
 .navbar {
- position: relative;
- width: 100%;
- height: 150px;
- display: flex;
- flex-direction: row;
- align-items: center;
- margin-left: -5%;
- /* border: 2px solid green; */
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -5%;
+  /* border: 2px solid green; */
 }
- 
+
 .logo_nav {
- position: relative;
- display: flex;
- flex-direction: row;
- margin: 0 auto;
- width: auto;
- height: 364;
- align-content: left;
- margin-left: 10%;
-
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: auto;
+  height: 364;
+  align-content: left;
+  margin-left: 10%;
 }
- 
+
 /* Estilização dos nomes da Logo */
- 
+
 .nav_title_logo {
- padding: 0.5rem;
- font-family: Fraunces;
- position: relative;
- width: 100%;
- display: flex;
- flex-direction: column;
- align-items: left;
- justify-content:baseline;
- margin-left: 1%;
- /* border: 1px solid red; */
+  padding: 0.5rem;
+  font-family: Fraunces;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: baseline;
+  margin-left: 1%;
+  /* border: 1px solid red; */
 }
- 
+
 #logo_2 {
- display: flex;
- float: left;
- color: var(--branco);
+  display: flex;
+  float: left;
+  color: var(--branco);
 }
- 
+
 #h2_logo {
- color: var(--amarelo);
+  color: var(--amarelo);
 }
- 
+
 #p_logo {
- font-size: 15px;
- color: var(--branco);
-}
- 
-#header{
-    position: relative;
-    margin-top: 60px;
-    width: 100%;
-    font-family: "Fraunces";    
-    font-weight: bold;
-    font-size: 64px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-header h1{
-    font-weight: bold;
-    font-size: 64px;
-}
-section{
-    height:900px;
-    margin-top: 20px;
-}
-#seçao{
-    position: relative;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-}
-#caixa1 img{
-    position: relative;
-    width: auto;
-    height: auto;
-}
-#caixa1 p{
-    position: relative;
-    width: 50%;
-    margin-top: 10px;
-    margin-left: 15%;
-    font-size: 32px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: white;
-    text-align: center;
+  font-size: 15px;
+  color: var(--branco);
 }
 
-#caixa2{
-    position: relative;
-    margin-top: 50px;
-    width: 55%;
-    height: 650px;
-    background-color: #D5C5E6;
-    border-radius: 3%;
-    display: flex;
-    flex-direction: column;
-    font-family: "Plus Jakarta Sans", sans-serif;
+#header {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  font-family: "Fraunces";
+  font-weight: bold;
+  font-size: 64px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-form{
-    width: 100%;
-    height: 323px;
-    margin-top: 50px;
-    }
-label{
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: black;
-    margin-left: 80px;
-    font-weight: bold;
+header h1 {
+  font-weight: bold;
+  font-size: 64px;
 }
-input{
-    position: relative;
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 80%;
-    height: 46px;
-    background-color: white;
-    margin: auto;
-    border-radius: 2%;
-    margin-left: 10%;  
-    text-indent: 20px;
+section {
+  height: 900px;
+  margin-top: 20px;
+}
+#seçao {
+  position: relative;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}
+#caixa1 img {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+#caixa1 p {
+  position: relative;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 15%;
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
 
+#caixa2 {
+  position: relative;
+  margin-top: 50px;
+  width: 55%;
+  height: 650px;
+  background-color: #d5c5e6;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
-button{
-    position: relative;
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 50%;
-    height: 39px;
-    color: #37006C;
-    background-color: #FFE778;
-    margin-top: 50px;
-    display: flex;
-    margin-left: 25%;
-    border-radius: 46px;
-    justify-content: center;
+form {
+  width: 100%;
+  height: 323px;
+  margin-top: 50px;
+}
+label {
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: black;
+  margin-left: 80px;
+  font-weight: bold;
+}
+input {
+  position: relative;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 80%;
+  height: 46px;
+  background-color: white;
+  margin: auto;
+  border-radius: 2%;
+  margin-left: 10%;
+  text-indent: 20px;
+}
+button {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 50%;
+  height: 39px;
+  color: #37006c;
+  background-color: #ffe778;
+  margin-top: 50px;
+  display: flex;
+  margin-left: 25%;
+  border-radius: 46px;
+  justify-content: center;
+  align-items: center;
+}
 
+button:hover {
+  background-color: var(--amarelo-hover);
+  border: 2px solid var(--roxo-dark);
 }
 /* Footer */
 
@@ -326,158 +330,152 @@ footer {
   letter-spacing: 0.5px;
 }
 
-
 /* ---------------------tablet-----------------------------------------*/
 
-@media only screen and (min-width:769px){
-    @media only screen and (max-width:1060px){
-
+@media only screen and (min-width: 769px) {
+  @media only screen and (max-width: 1060px) {
     /* Navbar */
 
     .navbar {
- position: relative;
- width: 50%;
- height: 150px;
- display: flex;
- flex-direction: row;
- align-items: center;
-/* border: 2px solid green; */
- margin-left: 5%;
-}
- 
-.logo_nav {
- position: relative;
- display: flex;
- flex-direction: row;
- width: auto;
- height: 94px;
- align-content: left;
-/*border: 1px solid red;*/
-margin-left: 0%;
-}
- 
-/* Estilização dos nomes da Logo */
- 
-.nav_title_logo {
- padding: 0.5rem;
- font-family: Fraunces;
- position: relative;
- width: 73%;
- display: flex;
- flex-direction: column;
- align-items: left;
- justify-content:baseline;
- margin-left: 0;
- /* border: 1px solid red;*/ 
-}
-
-#header{
-    position: relative;
-    width: 90%;
-    font-family: "Fraunces";    
-    font-weight: bold;
-    font-size: 62px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 50px;
-
-}
-header h1{
-    font-weight: bold;
-    font-size: 62px;
-}
-section{
-    height:900px;
-    margin-top: 20px;
-   /* border: 1px solid red;*/
-}
-#seçao{
-    position: relative;
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    height: 1450px;
-    margin-bottom: 100px;
-    align-items: center;
-}
-#caixa1 img{
-    margin: auto;
-    position: relative;
-    width: 90%;
-    height: auto;
-    margin-bottom: 100px;
-    display: flex;
-    margin: 50px;
-}
-
-#caixa1 p{
-    position: relative;
-    width: 80%;
-    font-size: 28px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: white;
-    margin: auto;
-    margin-bottom: -50px;
-}
-
-#caixa2{
-    position: relative;
-    height: 650px;
-    background-color: #D5C5E6;
-    border-radius: 3%;
-    display: flex;
-    flex-direction: column;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 70%;
-    margin: auto;
-    
-}
-form{
-    width: 100%;
-    height: 323px;
-    margin-top: 50px;
+      position: relative;
+      width: 50%;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* border: 2px solid green; */
+      margin-left: 5%;
     }
-label{
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: black;
-    margin-left: 80px;
-    font-weight: bold;
-}
-input{
-    position: relative;
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 80%;
-    height: 46px;
-    background-color: white;
-    margin: auto;
-    border-radius: 2%;
-    margin-left: 10%;  
-    text-indent: 20px;
 
-}
-button{
-    position: relative;
-    font-size: 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    width: 50%;
-    height: 39px;
-    color: #37006C;
-    background-color: #FFE778;
-    margin-top: 50px;
-    display: flex;
-    margin-left: 25%;
-    border-radius: 46px;
-    justify-content: center;
+    .logo_nav {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      height: 94px;
+      align-content: left;
+      /*border: 1px solid red;*/
+      margin-left: 0%;
+    }
 
-}
+    /* Estilização dos nomes da Logo */
 
-footer {
+    .nav_title_logo {
+      padding: 0.5rem;
+      font-family: Fraunces;
+      position: relative;
+      width: 73%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: baseline;
+      margin-left: 0;
+      /* border: 1px solid red;*/
+    }
+
+    #header {
+      position: relative;
+      width: 90%;
+      font-family: "Fraunces";
+      font-weight: bold;
+      font-size: 62px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-top: 50px;
+    }
+    header h1 {
+      font-weight: bold;
+      font-size: 62px;
+    }
+    section {
+      height: 900px;
+      margin-top: 20px;
+      /* border: 1px solid red;*/
+    }
+    #seçao {
+      position: relative;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: 1450px;
+      margin-bottom: 100px;
+      align-items: center;
+    }
+    #caixa1 img {
+      margin: auto;
+      position: relative;
+      width: 90%;
+      height: auto;
+      margin-bottom: 100px;
+      display: flex;
+      margin: 50px;
+    }
+
+    #caixa1 p {
+      position: relative;
+      width: 80%;
+      font-size: 28px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      color: white;
+      margin: auto;
+      margin-bottom: -50px;
+    }
+
+    #caixa2 {
+      position: relative;
+      height: 650px;
+      background-color: #d5c5e6;
+      border-radius: 3%;
+      display: flex;
+      flex-direction: column;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      width: 70%;
+      margin: auto;
+    }
+    form {
+      width: 100%;
+      height: 323px;
+      margin-top: 50px;
+    }
+    label {
+      font-size: 20px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      color: black;
+      margin-left: 80px;
+      font-weight: bold;
+    }
+    input {
+      position: relative;
+      font-size: 20px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      width: 80%;
+      height: 46px;
+      background-color: white;
+      margin: auto;
+      border-radius: 2%;
+      margin-left: 10%;
+      text-indent: 20px;
+    }
+    button {
+      position: relative;
+      font-size: 20px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      width: 50%;
+      height: 39px;
+      color: #37006c;
+      background-color: #ffe778;
+      margin-top: 50px;
+      display: flex;
+      margin-left: 25%;
+      border-radius: 46px;
+      justify-content: center;
+    }
+
+    footer {
       height: auto;
       border-radius: 40px 40px 0px 0px;
     }
@@ -571,56 +569,54 @@ footer {
       text-align: center;
       margin-top: 2%;
     }
-
   }
 }
-    
+
 /*-------------------------------mobile-----------------------------------------------*/
 @media only screen and (max-width: 768px) {
-main{
+  main {
     width: 100%;
-}
-    .navbar {
- position: relative;
- width: 100%;
- height: 42px;
- display: flex;
- flex-direction: row;
- align-items: center;
-/* border: 2px solid green; */
- margin-left: 5%;
-}
- 
-.logo_nav {
- position: relative;
- display: flex;
- flex-direction: row;
- width: auto;
- height: 37px;
- align-content: left;
-/*border: 1px solid red;*/
-margin-left: 0%;
-margin-top: 45px;
-}
- 
-/* Estilização dos nomes da Logo */
- 
-.nav_title_logo {
- padding: 0.5rem;
- font-family: Fraunces;
- position: relative;
- width: 100%;
- display: flex;
- flex-direction: column;
- align-items: left;
- justify-content:baseline;
-  margin-top: 45px;
-  text-align: justify;
-  margin-left: 1%;
-}
+  }
+  .navbar {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid green; */
+    margin-left: 5%;
+  }
 
+  .logo_nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 37px;
+    align-content: left;
+    /*border: 1px solid red;*/
+    margin-left: 0%;
+    margin-top: 45px;
+  }
 
-header h1{
+  /* Estilização dos nomes da Logo */
+
+  .nav_title_logo {
+    padding: 0.5rem;
+    font-family: Fraunces;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: baseline;
+    margin-top: 45px;
+    text-align: justify;
+    margin-left: 1%;
+  }
+
+  header h1 {
     font-weight: bold;
     font-size: 60px;
     margin: auto;
@@ -628,10 +624,9 @@ header h1{
     width: 90%;
     margin-bottom: 50px;
     margin-top: 100px;
+  }
 
-}
-
-#seçao{
+  #seçao {
     position: relative;
     width: 85%;
     display: flex;
@@ -640,17 +635,17 @@ header h1{
     height: 1450px;
     margin-bottom: 100px;
     align-items: center;
-}
-#caixa1 img{
+  }
+  #caixa1 img {
     margin: auto;
     position: relative;
     width: 90%;
     height: auto;
     margin-bottom: 100px;
     display: flex;
-}
+  }
 
-#caixa1 p{
+  #caixa1 p {
     position: relative;
     width: 80%;
     font-size: 28px;
@@ -658,33 +653,32 @@ header h1{
     color: white;
     margin: auto;
     margin-bottom: -50px;
-}
+  }
 
-#caixa2{
+  #caixa2 {
     position: relative;
     height: 650px;
-    background-color: #D5C5E6;
+    background-color: #d5c5e6;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
     font-family: "Plus Jakarta Sans", sans-serif;
     width: 100%;
     margin: auto;
-    
-}
-form{
+  }
+  form {
     width: 100%;
     height: 323px;
     margin-top: 50px;
-    }
-label{
+  }
+  label {
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: black;
     margin-left: 80px;
     font-weight: bold;
-}
-input{
+  }
+  input {
     position: relative;
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -693,26 +687,24 @@ input{
     background-color: white;
     margin: auto;
     border-radius: 2%;
-    margin-left: 10%;  
+    margin-left: 10%;
     text-indent: 20px;
-
-}
-button{
+  }
+  button {
     position: relative;
     font-size: 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
     width: 50%;
     height: 39px;
-    color: #37006C;
-    background-color: #FFE778;
+    color: #37006c;
+    background-color: #ffe778;
     margin-top: 50px;
     display: flex;
     margin-left: 25%;
     border-radius: 46px;
     justify-content: center;
-
-}
-footer {
+  }
+  footer {
     height: auto;
     border-radius: 40px 40px 0px 0px;
   }
@@ -791,11 +783,3 @@ footer {
     margin-top: 15%;
   }
 }
-
-
-
-
-
-
-
-

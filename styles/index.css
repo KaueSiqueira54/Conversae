@@ -2163,7 +2163,7 @@ body {
     margin: 0;
   }
 
-  .btn #inscrever {
+  #inscrever {
     width: 60%;
     font-size: 18px;
   }
