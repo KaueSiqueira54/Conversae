@@ -7,6 +7,11 @@
   position: relative;
 }
 
+a {
+  color: var(--roxo-escuro);
+  text-decoration: none;
+}
+
 /* Variáveis de cor */
 
 :root {
@@ -158,62 +163,62 @@ body {
   color: var(--roxo-dark);
   transition: 0.1s ease-in-out;
 }
-section img{
-    width: 100%;
-    position: absolute;
-    height: auto;
+section img {
+  width: 100%;
+  position: absolute;
+  height: auto;
 }
-#img{
-    position: absolute;
-    width: 100%;
-    justify-content: space-between;
-    top: 5px;
+#img {
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  top: 5px;
 }
-#agenda{
-    font-family: "Fraunces";
-    font-size: 36px;
-    text-align: center;
-    top: 120px;
-    color: #591799;
-    font-weight: normal;
+#agenda {
+  font-family: "Fraunces";
+  font-size: 36px;
+  text-align: center;
+  top: 120px;
+  color: #591799;
+  font-weight: normal;
 }
-#retanguloroxo{
-    position: absolute;
-    background-color: #E7C7FF;
-    width: 80%;
-    height: auto;
-    top: 200px;
-    left: 10%;
-    justify-content: space-between;
-    margin: auto;
-    border-radius: 20px;
+#retanguloroxo {
+  position: absolute;
+  background-color: #e7c7ff;
+  width: 80%;
+  height: auto;
+  top: 200px;
+  left: 10%;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 20px;
 }
-#março{
-    font-family: "Fraunces";
-    font-size: 36px;
-    text-align: center;
-    top: 30px;
-    color: #591799;
-    font-weight: normal;
+#março {
+  font-family: "Fraunces";
+  font-size: 36px;
+  text-align: center;
+  top: 30px;
+  color: #591799;
+  font-weight: normal;
 }
-#dias{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 75%;
-    font-family: "Fraunces";
-    font-size: 24px;
-    top: 120px;
-    color: var(--preto);
-    justify-content: space-between;
-    margin: auto;
+#dias {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  font-family: "Fraunces";
+  font-size: 24px;
+  top: 120px;
+  color: var(--preto);
+  justify-content: space-between;
+  margin: auto;
 }
-#calendario{
-    position: relative;
-    margin-left: 10%;
-    width: 80%;
-    height: auto;
-    margin-top: 150px;
+#calendario {
+  position: relative;
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  margin-top: 150px;
 }
 footer {
   width: 100%;
@@ -506,36 +511,37 @@ footer {
       color: var(--roxo-dark);
       border: 3px solid var(--roxo-dark);
     }
-    section img{
-    width: 100%;
-    position: absolute;
-    height: 650px;
-}
-#img{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-    top: 5px;
-}
-    #retanguloroxo{
-        position: absolute;
-        top: 200px;
-        height: auto;}
+    section img {
+      width: 100%;
+      position: absolute;
+      height: 650px;
+    }
+    #img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      justify-content: space-between;
+      top: 5px;
+    }
+    #retanguloroxo {
+      position: absolute;
+      top: 200px;
+      height: auto;
+    }
 
-    #agenda{
-        font-size: 30px;
-        margin-top: 20px;
+    #agenda {
+      font-size: 30px;
+      margin-top: 20px;
     }
-    #março{
-        font-size: 30px;
+    #março {
+      font-size: 30px;
     }
-    #dias{
-        font-size: 20px;
+    #dias {
+      font-size: 20px;
     }
     footer {
       height: auto;
-      border-radius: 40px 40px 0px 0px; 
+      border-radius: 40px 40px 0px 0px;
     }
 
     .container_footer {
@@ -627,7 +633,6 @@ footer {
       text-align: center;
       margin-top: 2%;
     }
-  
   }
 }
 
@@ -676,7 +681,6 @@ footer {
     height: 50px;
   }
 
-
   /* Logo */
 
   .logo_nav {
@@ -701,33 +705,33 @@ footer {
     font-size: 15px;
   }
 
-  #agenda{
+  #agenda {
     font-size: 28px;
   }
-  #março{
+  #março {
     font-size: 28px;
   }
-  #dias{
+  #dias {
     font-size: 16px;
   }
-  #retanguloroxo{
+  #retanguloroxo {
     position: absolute;
     top: 200px;
     height: auto;
   }
-  section img{
+  section img {
     width: 100%;
     height: 550px;
     position: absolute;
-}
-#img{
+  }
+  #img {
     position: absolute;
     width: 100%;
     height: auto;
     justify-content: space-between;
     top: 5px;
-}
-footer {
+  }
+  footer {
     top: 1000px;
     height: auto;
     border-radius: 40px 40px 0px 0px;
@@ -807,6 +811,3 @@ footer {
     margin-top: 15%;
   }
 }
-
-
-
