@@ -40,3 +40,7 @@ document.querySelectorAll(".mobile_nav_links a").forEach((link) => {
     tabMenu.classList.remove("active");
   });
 });
+
+function abrirLogin() {
+  window.open("../pages/login.html", "_blank", "noopener,noreferrer");
+}
