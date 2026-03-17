@@ -1,0 +1,774 @@
+* {
+  position: relative;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Paleta de cor */
+:root {
+  --branco: #ffff;
+  --roxo-escuro: #591799;
+  --roxo-claro: #c77dff;
+  --roxo-dark: #37006c;
+  --amarelo: #ffe778;
+}
+
+main {
+  background-color: var(--branco);
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0px 0px 20px 20px;
+  /* border: 2px solid green; */
+}
+.logo_nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+
+/* Estilização dos nomes da Logo */
+
+.nav_title_logo {
+  padding: 0.5rem;
+  font-family: Fraunces;
+  position: relative;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+#logo_2 {
+  display: flex;
+  float: left;
+  color: var(--roxo-escuro);
+}
+
+#h2_logo {
+  color: var(--roxo-claro);
+}
+
+#p_logo {
+  font-size: 15px;
+  color: var(--roxo-escuro);
+}
+
+/*Links da Navbar */
+
+.navbar_links {
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 5px solid pink; */
+}
+
+.navbar_links a {
+  font-family: Fraunces;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #591799;
+}
+
+.navbar_links h4 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* Botões navbar */
+
+.navbar_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_links button {
+  position: relative;
+  font-family: Fraunces;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+  font-weight: 700;
+  background-color: var(--roxo-dark);
+  color: var(--branco);
+  border-radius: 47px;
+}
+
+/* hover dos botões da nav */
+
+#login:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border: 3px solid var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
+
+#cadastro:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
+#vamos:hover {
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  transition: 0.1s ease-in-out;
+}
+
+/*----------- Pesquisa e Filtro -----------*/
+#fundo_ps {
+  position: relative;
+  background-color: var(--roxo-claro);
+  width: 100%;
+  height: 600px;
+  border-radius: 0px 0px 20px 20px;
+}
+#fundo_ps h1 {
+  position: relative;
+  font-family: Fraunces;
+  text-align: center;
+  color: var(--roxo-dark);
+  font-size: 40px;
+}
+#fundo_ps .subtitle {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 26px;
+  font-family: Plus Jakarta Sans;
+  margin-top: 1%;
+}
+#fundo_ps #filterps {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 15%;
+  font-size: 26px;
+  font-family: Plus Jakarta Sans;
+}
+#fundo_ps #consulta {
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  font-weight: 700;
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6%;
+  margin-top: 3%;
+  margin-left: 70.5%;
+}
+#fundo_ps #consulta:hover {
+  background-color: var(--roxo-escuro);
+  color: var(--amarelo);
+  transition: 0.1s ease-in-out;
+}
+#fundo_ps #filtrosex {
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  font-weight: 700;
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 170px;
+  height: 50px;
+  font-weight: 700;
+  background-color: #ebd1ff;
+  border: 2px solid #591799;
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6%;
+  margin-left: 13%;
+  margin-top: -2.8%;
+}
+#fundo_ps #filtrosex:hover {
+  background-color: var(--roxo-escuro);
+  color: var(--amarelo);
+  transition: 0.1s ease-in-out;
+}
+#fundo_ps #filtroet {
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  font-weight: 700;
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 170px;
+  height: 50px;
+  font-weight: 700;
+  background-color: #ebd1ff;
+  border: 2px solid #591799;
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6%;
+  margin-left: 23%;
+  margin-top: -2.6%;
+}
+#fundo_ps #filtroet img:hover {
+  margin-top: 1%;
+  width: 13%;
+  height: 50%;
+  transition: 0.1s ease-in-out;
+}
+#fundo_ps #filtroet img {
+  width: 10%;
+  height: 40%;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+#fundo_ps #filtrogen {
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  font-weight: 700;
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 170px;
+  height: 50px;
+  font-weight: 700;
+  background-color: #ebd1ff;
+  border: 2px solid #591799;
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6%;
+  margin-left: 33%;
+  margin-top: -2.6%;
+}
+#fundo_ps #filtrogen img:hover {
+  margin-top: 1%;
+  width: 13%;
+  height: 50%;
+  transition: 0.1s ease-in-out;
+}
+#fundo_ps #filtrogen img {
+  width: 10%;
+  height: 40%;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+#caixa_pesquisa input {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 20px;
+  font-family: Plus Jakarta Sans;
+  display: flex;
+}
+
+#caixa_pesquisa {
+  position: relative;
+  width: 70%;
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+#imagem_pesquisa {
+  background-color: var(--branco);
+  border-radius: 5px 0px 0px 5px;
+}
+#imagem_calendario {
+  background-color: var(--branco);
+}
+
+#imagem_filter {
+  background-color: var(--branco);
+}
+#caixa_pesquisa #fill {
+  padding-top: 22px;
+  padding-left: 1px;
+  font-size: 15px;
+  background-color: var(--branco);
+  height: 60px;
+  width: 10%;
+  font-family: Plus Jakarta Sans;
+  display: flex;
+  color: var(--roxo-dark);
+  font-weight: 700;
+  border-radius: 0px 5px 5px 0px;
+}
+#caixa_pesquisa #data {
+  padding-top: 22px;
+  padding-left: 10px;
+  font-size: 15px;
+  background-color: var(--branco);
+  height: 60px;
+  width: 15%;
+  font-family: Plus Jakarta Sans;
+  display: flex;
+  color: var(--roxo-dark);
+  font-weight: 700;
+}
+#caixa_pesquisa #data img {
+  width: 25%;
+  height: 40%;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+/*------ Psicoloco Area -------*/
+
+#iconfuso {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  font-weight: 700;
+  color: rgb(88, 88, 88);
+  font-size: 20px;
+  font-family: Plus Jakarta Sans;
+}
+#iconfuso img {
+  margin-top: -1%;
+}
+#title_sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  font-size: 40px;
+  font-weight: 1000;
+  color: var(--roxo-escuro);
+}
+#psperfil {
+  /* border: 2px solid red;  */
+  margin-top: 1%;
+  width: 100%;
+  height: 800px;
+  border-radius: 20px;
+  background-color: rgb(236, 236, 236);
+  margin-bottom: 5%;
+}
+#foto_perfil {
+  width: 10%;
+  margin-top: 1%;
+  margin-left: 4%;
+}
+#coracao {
+  display: flex;
+  margin-left: 13%;
+  margin-top: -12%;
+}
+#info_perfil {
+  margin-left: 16%;
+  margin-top: 0.5%;
+  /* border: 1px solid red; */
+  width: 20%;
+}
+#info_perfil p {
+  font-size: 30px;
+  font-family: Plus Jakarta Sans;
+}
+#info_perfil #min {
+  display: flex;
+  margin-top: -9.5%;
+  margin-left: 25%;
+  color: gray;
+}
+#info_perfil #ps {
+  color: rgb(133, 131, 131);
+}
+#info_perfil #name {
+  color: gray;
+  font-weight: 700;
+}
+#info_perfil #valor {
+  color: gray;
+  font-weight: 700;
+}
+#info_perfil #avaliacao img {
+  width: 5%;
+}
+#info_perfil #avaliacao {
+  font-size: 15px;
+  color: rgb(45, 45, 245);
+}
+#info_perfil #num {
+  display: flex;
+  font-size: 15px;
+  margin-top: -5%;
+  margin-left: 27%;
+  color: rgb(45, 45, 245);
+}
+#agendamento {
+  width: 30%;
+  height: 100%;
+  margin-left: 70%;
+  margin-top: -26.6%;
+  background-color: #c77dff;
+  border-radius: 10px 10px 10px 10px;
+}
+#online {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+#agendamento h2 {
+  margin-top: 10%;
+  margin-left: -13%;
+  font-size: 26px;
+  font-family: Plus Jakarta Sans;
+  color: var(--roxo-dark);
+}
+#agendamento p {
+  margin-top: 17%;
+  margin-left: -35%;
+  font-size: 20px;
+  color: var(--roxo-escuro);
+}
+#calendas_txt h2 {
+  /* border: 2px solid red; */
+  height: 300px;
+  margin-top: -2%;
+  width: 40%;
+  display: flex;
+  margin-left: 36.5%;
+}
+#calendas {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: -50%;
+}
+#calendas #dias {
+  margin-left: 1%;
+  word-spacing: 27px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Plus Jakarta Sans;
+}
+#agend_confi {
+  position: relative;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  font-weight: 700;
+  background-color: var(--amarelo);
+  color: var(--roxo-dark);
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+#agend_confi:hover {
+  background-color: var(--roxo-escuro);
+  color: var(--amarelo);
+  transition: 0.1s ease-in-out;
+}
+#denuncia {
+  display: flex;
+  width: 10%;
+  /* border: 1px solid red; */
+  margin-left: 7%;
+}
+#denuncia p {
+  padding-top: 3%;
+  color: rgb(49, 49, 49);
+}
+#especificacoes {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 13%;
+  margin-top: 4%;
+  margin-left: 4%;
+}
+#especificacoes #abordagem {
+  color: var(--roxo-claro);
+  font-weight: 700;
+  font-family: Plus Jakarta Sans;
+}
+#especificacoes #terapia {
+  padding-left: 3px;
+  font-family: Plus Jakarta Sans;
+}
+#especificacoes_2 {
+  margin-left: 4.5%;
+}
+#especificacoes_2 img {
+  width: 1.5%;
+  margin-top: 0.5%;
+}
+#especificacoes_2 #pessoas {
+  margin-left: 2%;
+  margin-top: -1.1%;
+  font-family: Plus Jakarta Sans;
+}
+#especi3 {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 2%;
+  justify-content: space-between;
+}
+#especi3 a {
+  text-decoration: none;
+  color: var(--roxo-dark);
+  background-color: var(--amarelo);
+  width: 15%;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Plus Jakarta Sans;
+}
+#ex {
+  display: flex;
+  margin-left: 30%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 18px;
+  color: rgb(18, 64, 190);
+  font-family: Plus Jakarta Sans;
+}
+#sobre {
+  width: 70%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20%;
+  justify-content: space-evenly;
+}
+#sobre h2 {
+  color: var(--roxo-dark);
+  font-family: Plus Jakarta Sans;
+  text-decoration: underline;
+  margin-left: 5%;
+  width: 45%;
+  height: 20px;
+  font-size: 25px;
+}
+#sobre p {
+  color: rgb(85, 84, 84);
+  font-family: Plus Jakarta Sans;
+  margin-top: 4%;
+  margin-left: -1%;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 25px;
+  height: 40%;
+}
+#sobre a {
+  display: flex;
+  /* margin-top: 20%; */
+  width: 100%;
+  font-family: Plus Jakarta Sans;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 2%;
+  text-decoration: none;
+  color: var(--roxo-escuro);
+}
+
+/*--------Foter-------*/
+
+footer {
+  width: 100%;
+  background-color: var(--roxo-escuro);
+  border-radius: 140px 140px 0px 0px;
+  display: flex;
+}
+
+/* Container */
+
+.container_footer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+}
+
+/* Container logo */
+
+.container_logo_footer_01 {
+  width: 30%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  /* top: -14%; */
+}
+
+/* Images */
+
+.images_footer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container_logo_footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+}
+
+/* Logo */
+
+.logo_footer {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logo_footer img {
+  width: 100%;
+}
+
+/* Logo texto */
+
+.logo_text_footer {
+  font-family: Fraunces;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 10px;
+}
+
+.logo_text_footer h2 {
+  font-size: 30px;
+  color: var(--branco);
+}
+
+.logo_text_footer h2 span {
+  color: var(--amarelo);
+  font-style: italic;
+}
+
+.logo_text_footer p {
+  top: -4%;
+  font-size: 15px;
+  color: var(--branco);
+}
+
+/* Container dos conteúdos */
+
+.container_conteudo_footer {
+  width: 80%;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container_navegacao_footer {
+  width: 40%;
+  height: 200px;
+  font-family: Plus Jakarta Sans;
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container conteudos */
+
+.conteudo_footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+/* Container h2 */
+
+.title_h2_footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Tag a footer */
+
+.container_a_footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.container_a_footer a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.copright {
+  font-family: Plus Jakarta Sans;
+  width: 100%;
+  height: 50px;
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
