@@ -12,6 +12,7 @@
   --roxo-claro: #c77dff;
   --roxo-dark: #37006c;
   --amarelo: #ffe778;
+  --amarelo-hover: #d9c45f;
 }
 
 main {
@@ -184,8 +185,9 @@ main {
   margin-left: 70.5%;
 }
 #fundo_ps #consulta:hover {
-  background-color: var(--roxo-escuro);
-  color: var(--amarelo);
+  background-color: var(--amarelo-hover);
+  border: 2px solid var(--roxo-dark);
+  color: var(--roxo-dark);
   transition: 0.1s ease-in-out;
 }
 #fundo_ps #filtrosex {
@@ -506,9 +508,10 @@ main {
   margin-left: 5%;
 }
 #agend_confi:hover {
-  background-color: var(--roxo-escuro);
-  color: var(--amarelo);
+  background-color: var(--amarelo-hover);
+  color: var(--roxo-dark);
   transition: 0.1s ease-in-out;
+  border: 1px solid var(--roxo-dark);
 }
 #denuncia {
   display: flex;
