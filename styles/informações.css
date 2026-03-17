@@ -1,0 +1,163 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#cdb9df;
+color:#333;
+}
+
+/* HEADER */
+
+.header{
+background:#5b1fa6;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+border-bottom-left-radius:30px;
+border-bottom-right-radius:30px;
+}
+
+.logo span{
+font-size:12px;
+opacity:0.8;
+}
+
+.menu{
+font-size:22px;
+cursor:pointer;
+}
+
+/* CONTAINER */
+
+.container{
+padding:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.container h1{
+text-align:center;
+margin-bottom:30px;
+color:#5b1fa6;
+}
+
+/* CARD */
+
+.card{
+background:#eee7e1;
+border-radius:10px;
+padding-bottom:20px;
+margin-bottom:40px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+position:relative;
+text-align:center;
+}
+
+.card-top{
+height:70px;
+background:linear-gradient(90deg,#8f5cd8,#c39be7);
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+
+.avatar{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid white;
+margin-top:-45px;
+}
+
+.card-body{
+padding:15px;
+}
+
+.card-body h3{
+margin-bottom:10px;
+}
+
+.card-body p{
+margin:5px 0;
+font-size:14px;
+}
+
+.card-body h4{
+margin-top:15px;
+color:#5b1fa6;
+}
+
+/* BOTÃO */
+
+.btn{
+background:#6a2ec9;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+.btn:hover{
+background:#4b1e99;
+}
+
+/* FOOTER */
+
+.footer{
+background:#5b1fa6;
+color:white;
+padding:30px 20px;
+border-top-left-radius:40px;
+border-top-right-radius:40px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.footer h4{
+margin-bottom:10px;
+}
+
+/* TABLET */
+
+@media (min-width:768px){
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.card{
+width:400px;
+margin:auto;
+margin-bottom:40px;
+}
+
+}
+
+/* DESKTOP */
+
+@media (min-width:1024px){
+
+.footer-grid{
+grid-template-columns:repeat(4,1fr);
+}
+
+.container{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+}
