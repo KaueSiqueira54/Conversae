@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background-color: #fffaf6;
+  font-family: Fraunces;
+}
+
+.container_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  width: 90%;
+  height: 850px;
+  background-color: #f4e5ff;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: flex;
+  margin: 2% auto; /* deixa no centro */
+  margin-top: 4%;
+}
+
+.container_titulo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+#titulo {
+  position: relative;
+  color: #37006c;
+  font-size: 20px;
+}
+
+#titulo h1 {
+  font-weight: 600;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+}
+
+#sobrenome,
+#nome,
+#data,
+#email,
+#senha,
+#confirmar_senha {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  margin-left: 30px;
+  top: -650px;
+  border: 1px solid rgb(194, 191, 191);
+}
+
+#circulo {
+  margin-top: -600px;
+  margin-left: 50px;
+  width: 10px;
+  height: 10px;
+}
+
+#bola {
+  border-radius: 50%;
+  border: 1px solid rgb(138, 133, 133);
+  background-color: #fdfcfe;
+  width: 40px;
+  height: 40px;
+}
+
+#bola:focus{
+    background-color: #ffe678;
+}
+
+p {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-left: 7%;
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+#imagem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 400px; /* Controla a largura */
+  height: auto; /* A altura cresce proporcionalmente sem quebrar o layout */
+  object-fit: contain;
+  margin-top: 20px;
+  margin-left: 900px;
+  width: 50%;
+  height: 700px;
+}
+
+.botoes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 150px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+#can {
+  background-color: #ffe6787f;
+  color: #37006c;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: Frauces;
+  border: none;
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#pro {
+  background-color: #ffe6787a;
+  color: #37006c;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: Frauces;
+  width: 250px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#pro:hover{
+    transition: 1s all;
+    background-color: #ffe678;
+}
+
+#can:hover{
+    transition: 1s all;
+    background-color: #ffe678;
+}
+
+.container_a_footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.container_a_footer a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+
+
+/* ══════════════════════════════════════
+   TABLET  (769px – 1024px)
+   ══════════════════════════════════════ */
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+  section {
+    width: 94%;
+    height: auto;
+    margin: 4% auto 2%;
+    border-radius: 12px;
+  }
+ 
+  .container_section {
+    padding: 28px 24px 32px;
+  }
+ 
+  /* Título */
+  .container_titulo {
+    margin-bottom: 20px;
+  }
+ 
+  #titulo h1 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.4;
+  }
+ 
+  /* Oculta imagem no tablet */
+  #img {
+    display: none;
+  }
+ 
+  /* Formulário ocupa largura maior */
+  .formulario {
+    gap: 20px;
+  }
+ 
+  #sobrenome,
+  #nome,
+  #data,
+  #email,
+  #senha,
+  #confirmar_senha {
+    width: 80%;
+    height: 48px;
+    font-size: 16px;
+    margin-left: 0;
+    top: 0;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 191, 191) !important;
+    padding: 0 14px !important;
+    font-family: Fraunces;
+  }
+ 
+  /* Centraliza inputs */
+  .formulario {
+    align-items: center;
+    margin-top: 10px;
+  }
+ 
+  /* Checkbox + texto */
+  #circulo {
+    margin-top: 26px;
+    margin-left: -180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  p {
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  /* Botões */
+  .botoes {
+    justify-content: center;
+    gap: 40px;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+ 
+  #can,
+  #pro {
+    width: 160px;
+    font-size: 20px;
+    padding: 10px 16px;
+  }
+}
+ 
+ 
+/* ══════════════════════════════════════
+   MOBILE  (≤ 768px)
+   ══════════════════════════════════════ */
+ 
+@media (max-width: 768px) {
+ 
+  section {
+    width: 92%;
+    height: auto;
+    margin: 5% auto;
+    border-radius: 16px;
+  }
+ 
+  .container_section {
+    padding: 24px 20px 32px;
+  }
+ 
+  /* Título */
+  .container_titulo {
+    margin-bottom: 20px;
+  }
+ 
+  #titulo {
+    text-align: center;
+  }
+ 
+  #titulo h1 {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+ 
+  /* Oculta imagem no mobile */
+  #img {
+    display: none;
+  }
+ 
+  /* Formulário em coluna centralizado */
+  .formulario {
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+  }
+ 
+  #sobrenome,
+  #nome,
+  #data,
+  #email,
+  #senha,
+  #confirmar_senha {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 0;
+    top: 0;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 191, 191) !important;
+    padding: 0 14px !important;
+    font-family: Fraunces;
+    background: #fff;
+  }
+ 
+  /* Checkbox */
+  #circulo {
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+ 
+  /* Texto de política */
+  p {
+    margin-left: 50px;
+    margin-top: -10px;
+    font-size: 18px;
+    text-align: left;
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+ 
+  /* Botões lado a lado */
+  .botoes {
+    justify-content: center;
+    gap: 16px;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+ 
+  #can,
+  #pro {
+    width: 130px;
+    font-size: 18px;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+}
+ 
+@media (max-width: 400px) {
+  section {
+    width: 96%;
+  }
+ 
+  .container_section {
+    padding: 20px 14px 28px;
+  }
+ 
+  #can,
+  #pro {
+    width: 110px;
+    font-size: 16px;
+  }
+}
