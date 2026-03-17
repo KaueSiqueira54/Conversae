@@ -4,136 +4,257 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   background-color: #fffaf6;
   font-family: Fraunces;
 }
-
-.container_section {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  gap: 70px;
-}
-
+ 
+ 
 section {
-  position: relative;
   width: 90%;
-  height: 650px;
   background-color: #f4e5ff;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid gray;
   display: flex;
-  margin: 2% auto; /*deixa no centro*/
-  margin-top: 4%;
+  align-items: stretch;
+  margin: 4% auto 2%;
+  overflow: hidden;
+  min-height: 500px;
 }
-
-.container_titulo {
+ 
+.container_section {
   width: 100%;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  flex-direction: row;
+  align-items: center;
 }
-
+ 
+/* ── Coluna esquerda ── */
+.container_titulo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 48px 40px;
+}
+ 
 #titulo {
-  position: absolute;
-  top: 0; /* fica no topo da tela */
-  left: 50%;
-  transform: translateX(-50%); /* centraliza */
   color: #37006c;
-  font-size: 20px;
+  width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  font-size: 20px;
 }
-
+ 
 #titulo h1 {
+ 
   font-weight: 600;
-  white-space: nowrap; /* impede quebrar linha */
-  margin: 10px 0;
 }
-
+ 
+/* ── Formulário ── */
 .formulario {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  gap: 30px;
+  gap: 40px;
 }
-
+ 
 #sexualidade,
 #hobbies,
 #estado,
 #residencia {
-  position: relative;
-  width: 75%;
-  height: 50px;
-  font-size: 18px;
-  display: flex;
-  margin-left: 300px;
-  top: 20%;
-  border: 1px solid rgb(194, 191, 191);
-}
-
-#imagem1 {
-  /* border: 1px solid red; */
-  display: flex;
-  width: 50%;
-  height: 500px;
-}
-
-#pincel {
-  display: flex;
-  align-self: flex-start;
-  margin-top: 60px;
-  margin-left: -40px;
   width: 100%;
-  height: 500px;
-}
-
-.botoes {
-  width: 30%;
   height: 50px;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 1px solid rgb(194, 191, 191);
+  border-radius: 6px;
+  background: #fff;
+  font-family: Fraunces;
+  color: #555;
+}
+ 
+/* ── Botões ── */
+.botoes {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  justify-content: flex-end;      /* Centraliza horizontalmente */
-  align-items: end;          /* Centraliza verticalmente */
-  height: 100vh;            /* Garante 100% da altura da tela */
-  margin-top: -150px;
-  margin-left: -400px;
-  /* border: 1px solid red; */
+  gap: 70px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 90px;
 }
-
+ 
+#fin,
 #can {
-  background-color: #ffe6787f;
+  background-color: #faedb2;
   color: #37006c;
-  font-weight: 400;
-  font-size: 26px;
+  font-weight: 500;
+  font-size: 20px;
   font-family: Fraunces;
-  width: 250px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transform: translate(-450%);
+  width: 180px;
+  height: 48px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
 }
-
-#fin {
-  background-color: #ffe6787a;
-  color: #37006c;
-  font-weight: 400;
-  font-size: 26px;
-  font-family: Fraunces;
-  width: 250px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transform: translate(-150%);
-}
-
-#fin:hover {
-  transition: 1s all;
-  background-color: #ffe678;
-}
-
+ 
+#fin:hover,
 #can:hover {
-  transition: 1s all;
   background-color: #ffe678;
+}
+ 
+/* ── Imagem ── */
+#imagem1 {
+  width: 35%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 16px;
+}
+ 
+#pincel {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.container_a_footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.container_a_footer a {
+  color: var(--branco);
+  text-decoration: none;
+}
+ 
+ 
+/* ══════════════════════════════════════
+   TABLET  (769px – 1024px)
+   ══════════════════════════════════════ */
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+  section {
+    width: 94%;
+    margin: 4% auto 2%;
+    border-radius: 12px;
+  }
+ 
+  .container_section {
+    flex-direction: column;
+  }
+ 
+  .container_titulo {
+    width: 100%;
+    padding: 32px 28px;
+    gap: 16px;
+  }
+ 
+  #titulo h1 {
+    font-size: 20px;
+  }
+ 
+  #imagem1 {
+    display: none;
+  }
+ 
+  #sexualidade,
+  #hobbies,
+  #estado,
+  #residencia {
+    height: 48px;
+    font-size: 15px;
+  }
+ 
+  .botoes {
+    gap: 16px;
+  }
+ 
+  #fin,
+  #can {
+    width: 150px;
+    font-size: 18px;
+    height: 44px;
+  }
+}
+ 
+ 
+/* ══════════════════════════════════════
+   MOBILE  (≤ 768px)
+   ══════════════════════════════════════ */
+ 
+@media (max-width: 768px) {
+ 
+  section {
+    width: 92%;
+    margin: 5% auto;
+    border-radius: 16px;
+  }
+ 
+  .container_section {
+    flex-direction: column;
+  }
+ 
+  .container_titulo {
+    width: 100%;
+    padding: 24px 20px 32px;
+    gap: 14px;
+  }
+ 
+  #titulo h1 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+ 
+  #imagem1 {
+    display: none;
+  }
+ 
+  #sexualidade,
+  #hobbies,
+  #estado,
+  #residencia {
+    height: 50px;
+    font-size: 15px;
+  }
+ 
+  .botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+ 
+  #fin,
+  #can {
+    width: 160px;
+    font-size: 18px;
+    height: 46px;
+  }
+}
+ 
+@media (max-width: 400px) {
+ 
+  section {
+    width: 96%;
+  }
+ 
+  .container_titulo {
+    padding: 20px 14px 28px;
+  }
+ 
+  #fin,
+  #can {
+    width: 140px;
+    font-size: 16px;
+  }
 }

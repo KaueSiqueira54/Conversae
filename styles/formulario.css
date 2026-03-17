@@ -155,3 +155,230 @@ p {
     transition: 1s all;
     background-color: #ffe678;
 }
+
+.container_a_footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.container_a_footer a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+
+
+/* ══════════════════════════════════════
+   TABLET  (769px – 1024px)
+   ══════════════════════════════════════ */
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+  section {
+    width: 94%;
+    height: auto;
+    margin: 4% auto 2%;
+    border-radius: 12px;
+  }
+ 
+  .container_section {
+    padding: 28px 24px 32px;
+  }
+ 
+  /* Título */
+  .container_titulo {
+    margin-bottom: 20px;
+  }
+ 
+  #titulo h1 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.4;
+  }
+ 
+  /* Oculta imagem no tablet */
+  #img {
+    display: none;
+  }
+ 
+  /* Formulário ocupa largura maior */
+  .formulario {
+    gap: 20px;
+  }
+ 
+  #sobrenome,
+  #nome,
+  #data,
+  #email,
+  #senha,
+  #confirmar_senha {
+    width: 80%;
+    height: 48px;
+    font-size: 16px;
+    margin-left: 0;
+    top: 0;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 191, 191) !important;
+    padding: 0 14px !important;
+    font-family: Fraunces;
+  }
+ 
+  /* Centraliza inputs */
+  .formulario {
+    align-items: center;
+    margin-top: 10px;
+  }
+ 
+  /* Checkbox + texto */
+  #circulo {
+    margin-top: 26px;
+    margin-left: -180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  p {
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  /* Botões */
+  .botoes {
+    justify-content: center;
+    gap: 40px;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+ 
+  #can,
+  #pro {
+    width: 160px;
+    font-size: 20px;
+    padding: 10px 16px;
+  }
+}
+ 
+ 
+/* ══════════════════════════════════════
+   MOBILE  (≤ 768px)
+   ══════════════════════════════════════ */
+ 
+@media (max-width: 768px) {
+ 
+  section {
+    width: 92%;
+    height: auto;
+    margin: 5% auto;
+    border-radius: 16px;
+  }
+ 
+  .container_section {
+    padding: 24px 20px 32px;
+  }
+ 
+  /* Título */
+  .container_titulo {
+    margin-bottom: 20px;
+  }
+ 
+  #titulo {
+    text-align: center;
+  }
+ 
+  #titulo h1 {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+ 
+  /* Oculta imagem no mobile */
+  #img {
+    display: none;
+  }
+ 
+  /* Formulário em coluna centralizado */
+  .formulario {
+    align-items: center;
+    gap: 14px;
+    margin-top: 10px;
+  }
+ 
+  #sobrenome,
+  #nome,
+  #data,
+  #email,
+  #senha,
+  #confirmar_senha {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 0;
+    top: 0;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 191, 191) !important;
+    padding: 0 14px !important;
+    font-family: Fraunces;
+    background: #fff;
+  }
+ 
+  /* Checkbox */
+  #circulo {
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+ 
+  /* Texto de política */
+  p {
+    margin-left: 50px;
+    margin-top: -10px;
+    font-size: 18px;
+    text-align: left;
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+ 
+  /* Botões lado a lado */
+  .botoes {
+    justify-content: center;
+    gap: 16px;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+ 
+  #can,
+  #pro {
+    width: 130px;
+    font-size: 18px;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+}
+ 
+@media (max-width: 400px) {
+  section {
+    width: 96%;
+  }
+ 
+  .container_section {
+    padding: 20px 14px 28px;
+  }
+ 
+  #can,
+  #pro {
+    width: 110px;
+    font-size: 16px;
+  }
+}
