@@ -23,6 +23,17 @@
   --roxo-clarinho: #debffd;
 }
 
+.video_sec_quatro {
+  width: 560px;
+  height: 315px;
+}
+
+.video_sec_quatro video {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
 /* Conteúdos somente no mobile */
 
 #mob_p,
