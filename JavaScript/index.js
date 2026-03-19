@@ -41,6 +41,14 @@ document.querySelectorAll(".mobile_nav_links a").forEach((link) => {
   });
 });
 
-function abrirLogin() {
-  window.open("../pages/login.html", "_blank", "noopener,noreferrer");
+function abrirLoginMob() {
+  window.open("pages/login.html", "_blank", "noopener,noreferrer");
+}
+
+function abrirCadastroMob() {
+  window.open("pages/cadastro.html", "_blank", "noopener,noreferrer");
+}
+
+function abrirConversa() {
+  window.open("pages/agendamentousuario.html", "_blank", "noopener,noreferrer");
 }
