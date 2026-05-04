@@ -117,9 +117,9 @@ Conversae/
         <td align="center">
       <a href="https://github.com/araujobrito">
         <img src="https://github.com/araujobrito.png" width="80px;" alt="João Vitor"/><br />
-        <sub><b>João Vitor</b></sub>
+        <sub><b>João Victor</b></sub>
       </a><br/>
-      <sub>Front-End</sub>
+      <sub>FullStack </sub>
     </td>
         <td align="center">
       <a href="https://github.com/Vlauetto">
